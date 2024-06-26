@@ -408,6 +408,7 @@ var DEFAULT_SETTINGS = {
     trimValue: app.stringIDToTypeID("trimValue"),
     useDelimiter: app.stringIDToTypeID("useDelimiter"),
     visibleOnly: app.stringIDToTypeID('visibleOnly'),
+    relative: app.stringIDToTypeID('relative'),
 };
 
 //
@@ -1188,7 +1189,16 @@ function showDialog() {
     // ===================
     // DESTINATION SECTION
     // ===================
-    fields.txtDestination.text = prefs.destination;
+    fields.cbRelative.value = prefs.relative;
+    fields.cbRelative.enabled = true;
+    if (prefs.relative) {
+        // 如果是相对路径，将其转换为相对于当前文档的路径
+        var activeDocumentPath = app.activeDocument.path.fsName;
+        var relativePath = activeDocumentPath;
+        fields.txtDestination.text = relativePath;
+    }else{
+        fields.txtDestination.text = prefs.destination;
+    }
     fields.btnBrowse.onClick = function() {
         var newFilePath = Folder.selectDialog("Select destination folder", prefs.destination);
         if (newFilePath) {
@@ -1559,6 +1569,7 @@ function saveSettings(dialog) {
 
     desc.putString(DEFAULT_SETTINGS.delimiter, fields.txtDelimiter.text);
     desc.putString(DEFAULT_SETTINGS.destination, fields.txtDestination.text);
+    desc.putBoolean(DEFAULT_SETTINGS.relative, fields.cbRelative.value);
     desc.putBoolean(DEFAULT_SETTINGS.exportBackground, fields.cbBackground.value);
     desc.putBoolean(DEFAULT_SETTINGS.exportForeground, fields.cbForeground.value);
     desc.putInteger(DEFAULT_SETTINGS.exportLayerTarget, exportLayerTarget);
@@ -1648,6 +1659,7 @@ function getDefaultSettings() {
 
         // might throw if format changed or got corrupt
         result = {
+            relative: false,
             bmpAlphaChannel: false,
             bmpDepth: 0,
             bmpFlipRowOrder: false,
@@ -1795,6 +1807,7 @@ function getSettings(formatOpts) {
             trimValue: desc.getInteger(DEFAULT_SETTINGS.trimValue),
             useDelimiter: desc.getBoolean(DEFAULT_SETTINGS.useDelimiter),
             visibleOnly: desc.getBoolean(DEFAULT_SETTINGS.visibleOnly),
+            relative: desc.getBoolean(DEFAULT_SETTINGS.relative),
 
         };
     } catch (e) {
@@ -2465,6 +2478,7 @@ function getDialogFields(dialog) {
     return {
         btnBrowse: dialog.findElement("btnBrowse"),
         txtDestination: dialog.findElement("txtDestination"),
+        cbRelative: dialog.findElement("cbRelative"),
 
         radioAll: dialog.findElement("radioAll"),
         radioSelected: dialog.findElement("radioSelected"),
@@ -2605,9 +2619,13 @@ function makeMainDialog() {
     pnlDestination.margins = 10; 
     pnlDestination.alignment = ["left","center"]; 
 
+    var cbRelative = pnlDestination.add("checkbox", undefined, undefined, {name: "cbRelative"}); 
+    cbRelative.helpTip = "将文件保存到当前目录"; 
+    cbRelative.text = "相对路径"; 
+
     var txtDestination = pnlDestination.add('edittext {properties: {name: "txtDestination"}}'); 
     txtDestination.helpTip = "文件保存位置"; 
-    txtDestination.preferredSize.width = 200; 
+    txtDestination.preferredSize.width = 190; 
 
     var btnBrowse = pnlDestination.add("button", undefined, undefined, {name: "btnBrowse"}); 
     btnBrowse.text = "浏览..."; 
