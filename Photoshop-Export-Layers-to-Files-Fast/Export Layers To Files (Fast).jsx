@@ -461,7 +461,7 @@ function main() {
     selectedLayerCount = layerCountResult.selectedLayerCount;
     var countDuration = profiler.getDuration(true, true);
     if (env.profiling) {
-        alert("²ãÊı¼ÆÈë " + profiler.format(countDuration), "µ÷ÊÔĞÅÏ¢");
+        alert("å±‚æ•°è®¡å…¥ " + profiler.format(countDuration), "è°ƒè¯•ä¿¡æ¯");
     }
 
     // show dialog
@@ -479,7 +479,7 @@ function main() {
         }
         var collected = collectLayers(progressBarWindow);
         if (userCancelled) {
-            alert("È¡Ïûµ¼³ö£¡Ã»ÓĞ±£´æÎÄ¼ş¡£", "Íê³ÉµÄ", false);
+            alert("å–æ¶ˆå¯¼å‡ºï¼æ²¡æœ‰ä¿å­˜æ–‡ä»¶ã€‚", "å®Œæˆçš„", false);
             return "cancel";
         }
         layers = collected.layers;
@@ -1122,7 +1122,7 @@ function createProgressBar() {
     try {
         win = new Window(rsrcString);
     } catch (e) {
-        alert("½ø¶ÈÌõ×ÊÔ´ÒÑËğ»µ£¡ÇëÖØĞÂÏÂÔØ°üº¬ËùÓĞÎÄ¼şµÄ½Å±¾¡£", "´íÎó", true);
+        alert("è¿›åº¦æ¡èµ„æºå·²æŸåï¼è¯·é‡æ–°ä¸‹è½½åŒ…å«æ‰€æœ‰æ–‡ä»¶çš„è„šæœ¬ã€‚", "é”™è¯¯", true);
         return false;
     }
 
@@ -1179,7 +1179,7 @@ function showDialog() {
     try {
         dialog = makeMainDialog();
     } catch (e) {
-        alert("´ò¿ª¶Ô»°¿òÊ±³ö´í£¡ÇëÌá³öÎÊÌâ²¢³¢ÊÔ¾É°æ±¾¡£", "´íÎó", true);
+        alert("æ‰“å¼€å¯¹è¯æ¡†æ—¶å‡ºé”™ï¼è¯·æå‡ºé—®é¢˜å¹¶å°è¯•æ—§ç‰ˆæœ¬ã€‚", "é”™è¯¯", true);
         return false;
     }
 
@@ -1826,7 +1826,7 @@ function bootstrap() {
             throw new Error();
         }
     } catch (e) {
-        alert("Ã»ÓĞÎÄµµ´ò¿ª£¡ÎŞ¿Éµ¼³öÍ¼²ã¡£", "´íÎó", true);
+        alert("æ²¡æœ‰æ–‡æ¡£æ‰“å¼€ï¼æ— å¯å¯¼å‡ºå›¾å±‚ã€‚", "é”™è¯¯", true);
         return "cancel";
     }
 
@@ -1838,7 +1838,7 @@ function bootstrap() {
         env.version = parseInt(app.version, 10);
 
         if (env.version < 9) {
-            alert("²»Ö§³Ö CS2 Ö®Ç°µÄ Photoshop °æ±¾£¡", "´íÎó", true);
+            alert("ä¸æ”¯æŒ CS2 ä¹‹å‰çš„ Photoshop ç‰ˆæœ¬ï¼", "é”™è¯¯", true);
             return "cancel";
         }
 
@@ -2409,7 +2409,7 @@ function indexOf(array, element) {
 function loadResource(file) {
     var rsrcString;
     if (!file.exists) {
-        alert("×ÊÔ´ÎÄ¼ş '" + file.name + "' ÒòÎªÈ±ÉÙµ¼³ö¶Ô»°¿ò£¡ÇëÏÂÔØ´Ë½Å±¾¸½´øµÄÆäÓàÎÄ¼ş¡£", "´íÎó", true);
+        alert("èµ„æºæ–‡ä»¶ '" + file.name + "' å› ä¸ºç¼ºå°‘å¯¼å‡ºå¯¹è¯æ¡†ï¼è¯·ä¸‹è½½æ­¤è„šæœ¬é™„å¸¦çš„å…¶ä½™æ–‡ä»¶ã€‚", "é”™è¯¯", true);
         return false;
     }
     try {
@@ -2421,7 +2421,7 @@ function loadResource(file) {
             throw file.error;
         }
     } catch (error) {
-        alert("¶ÁÈ¡×ÊÔ´ÎÄ¼şÊ§°Ü '" + file.name + "'!\n\nÔ­Òò£º " + error + "\n\nÇë¼ì²éËüÊÇ·ñ¿É¹©ÔÄ¶Á²¢ÖØĞÂÏÂÔØ£¬ÒÔ·ÀËüËğ»µ¡£", "´íÎó", true);
+        alert("è¯»å–èµ„æºæ–‡ä»¶å¤±è´¥ '" + file.name + "'!\n\nåŸå› ï¼š " + error + "\n\nè¯·æ£€æŸ¥å®ƒæ˜¯å¦å¯ä¾›é˜…è¯»å¹¶é‡æ–°ä¸‹è½½ï¼Œä»¥é˜²å®ƒæŸåã€‚", "é”™è¯¯", true);
         return false;
     }
 
@@ -2598,7 +2598,7 @@ function makeMainDialog() {
     // PNLDESTINATION
     // ==============
     var pnlDestination = grpCol1.add("panel", undefined, undefined, {name: "pnlDestination"}); 
-    pnlDestination.text = "Êä³öÂ·¾¶"; 
+    pnlDestination.text = "è¾“å‡ºè·¯å¾„"; 
     pnlDestination.orientation = "row"; 
     pnlDestination.alignChildren = ["left","center"]; 
     pnlDestination.spacing = 10; 
@@ -2606,17 +2606,17 @@ function makeMainDialog() {
     pnlDestination.alignment = ["left","center"]; 
 
     var txtDestination = pnlDestination.add('edittext {properties: {name: "txtDestination"}}'); 
-    txtDestination.helpTip = "ÎÄ¼ş±£´æÎ»ÖÃ"; 
+    txtDestination.helpTip = "æ–‡ä»¶ä¿å­˜ä½ç½®"; 
     txtDestination.preferredSize.width = 200; 
 
     var btnBrowse = pnlDestination.add("button", undefined, undefined, {name: "btnBrowse"}); 
-    btnBrowse.text = "ä¯ÀÀ..."; 
+    btnBrowse.text = "æµè§ˆ..."; 
     btnBrowse.justify = "left"; 
 
     // PNLEXPORT
     // =========
     var pnlExport = grpCol1.add("panel", undefined, undefined, {name: "pnlExport"}); 
-    pnlExport.text = "µ¼³ö"; 
+    pnlExport.text = "å¯¼å‡º"; 
     pnlExport.orientation = "column"; 
     pnlExport.alignChildren = ["left","top"]; 
     pnlExport.spacing = 11; 
@@ -2632,13 +2632,13 @@ function makeMainDialog() {
     grpExport.margins = 0; 
 
     var radioAll = grpExport.add("radiobutton", undefined, undefined, {name: "radioAll"}); 
-    radioAll.helpTip = "µ¼³öËùÓĞÍ¼²ã"; 
-    radioAll.text = "ËùÓĞÍ¼²ã"; 
+    radioAll.helpTip = "å¯¼å‡ºæ‰€æœ‰å›¾å±‚"; 
+    radioAll.text = "æ‰€æœ‰å›¾å±‚"; 
     radioAll.value = true; 
 
     var radioSelected = grpExport.add("radiobutton", undefined, undefined, {name: "radioSelected"}); 
-    radioSelected.helpTip = "½öµ¼³öÑ¡¶¨µÄ×é¡£±ØĞëÑ¡ÔñÒªÆôÓÃµÄ×é¡£"; 
-    radioSelected.text = "Ñ¡¶¨×é"; 
+    radioSelected.helpTip = "ä»…å¯¼å‡ºé€‰å®šçš„ç»„ã€‚å¿…é¡»é€‰æ‹©è¦å¯ç”¨çš„ç»„ã€‚"; 
+    radioSelected.text = "é€‰å®šç»„"; 
 
     // GRPIGNORE
     // =========
@@ -2649,8 +2649,8 @@ function makeMainDialog() {
     grpIgnore.margins = 0; 
 
     var cbVisibleOnly = grpIgnore.add("checkbox", undefined, undefined, {name: "cbVisibleOnly"}); 
-    cbVisibleOnly.helpTip = "ÊÇ·ñ½öµ¼³ö¿É¼ûÍ¼²ã"; 
-    cbVisibleOnly.text = "½ö¿É¼û"; 
+    cbVisibleOnly.helpTip = "æ˜¯å¦ä»…å¯¼å‡ºå¯è§å›¾å±‚"; 
+    cbVisibleOnly.text = "ä»…å¯è§"; 
 
     // GRPIGNOREPREFIX
     // ===============
@@ -2661,25 +2661,25 @@ function makeMainDialog() {
     grpIgnorePrefix.margins = 0; 
 
     var cbIgnorePrefix = grpIgnorePrefix.add("checkbox", undefined, undefined, {name: "cbIgnorePrefix"}); 
-    cbIgnorePrefix.helpTip = "ºöÂÔÒÔÒÔÏÂ¿ªÍ·µÄÍ¼²ã"; 
-    cbIgnorePrefix.text = "ºöÂÔÒÔÒÔÏÂ¿ªÍ·µÄ²ã "; 
+    cbIgnorePrefix.helpTip = "å¿½ç•¥ä»¥ä»¥ä¸‹å¼€å¤´çš„å›¾å±‚"; 
+    cbIgnorePrefix.text = "å¿½ç•¥ä»¥ä»¥ä¸‹å¼€å¤´çš„å±‚ "; 
 
     var txtIgnorePrefix = grpIgnorePrefix.add('edittext {properties: {name: "txtIgnorePrefix"}}'); 
-    txtIgnorePrefix.helpTip = "ÒªÆ¥ÅäµÄÇ°×º"; 
+    txtIgnorePrefix.helpTip = "è¦åŒ¹é…çš„å‰ç¼€"; 
     txtIgnorePrefix.text = "!"; 
     txtIgnorePrefix.preferredSize.width = 31; 
 
     // PNLNAMEFILES
     // ============
     var pnlNameFiles = grpCol1.add("panel", undefined, undefined, {name: "pnlNameFiles"}); 
-    pnlNameFiles.text = "ÎÄ¼şÃû"; 
+    pnlNameFiles.text = "æ–‡ä»¶å"; 
     pnlNameFiles.orientation = "column"; 
     pnlNameFiles.alignChildren = ["left","top"]; 
     pnlNameFiles.spacing = 4; 
     pnlNameFiles.margins = [10,10,10,10]; 
     pnlNameFiles.alignment = ["fill","center"]; 
 
-    var ddNameAs_array = ["Ê¹ÓÃÍ¼²ãÃû³Æ£¨Ìõ´øÀ©Õ¹£©","Ê¹ÓÃÍ¼²ãÃû³Æ£¨±£ÁôÀ©Õ¹Ãû£©","Ê¹ÓÃÍ¼²ãºÍ¸¸×éÃû³Æ","Ê¹ÓÃË÷Òı½µĞò","Ê¹ÓÃË÷ÒıÉıĞò"]; 
+    var ddNameAs_array = ["ä½¿ç”¨å›¾å±‚åç§°ï¼ˆæ¡å¸¦æ‰©å±•ï¼‰","ä½¿ç”¨å›¾å±‚åç§°ï¼ˆä¿ç•™æ‰©å±•åï¼‰","ä½¿ç”¨å›¾å±‚å’Œçˆ¶ç»„åç§°","ä½¿ç”¨ç´¢å¼•é™åº","ä½¿ç”¨ç´¢å¼•å‡åº"]; 
     var ddNameAs = pnlNameFiles.add("dropdownlist", undefined, undefined, {name: "ddNameAs", items: ddNameAs_array}); 
     ddNameAs.selection = 0; 
 
@@ -2692,11 +2692,11 @@ function makeMainDialog() {
     grpDelimiter.margins = 0; 
 
     var cbDelimiter = grpDelimiter.add("checkbox", undefined, undefined, {name: "cbDelimiter"}); 
-    cbDelimiter.helpTip = "ÊÇ·ñÔÚµ¥´ÊÖ®¼äÊ¹ÓÃ×Ô¶¨Òå·Ö¸ô·û"; 
-    cbDelimiter.text = "Ê¹ÓÃ×Ô¶¨Òå·Ö¸ô·û"; 
+    cbDelimiter.helpTip = "æ˜¯å¦åœ¨å•è¯ä¹‹é—´ä½¿ç”¨è‡ªå®šä¹‰åˆ†éš”ç¬¦"; 
+    cbDelimiter.text = "ä½¿ç”¨è‡ªå®šä¹‰åˆ†éš”ç¬¦"; 
 
     var txtDelimiter = grpDelimiter.add('edittext {properties: {name: "txtDelimiter"}}'); 
-    txtDelimiter.helpTip = "µ¥´ÊÖ®¼äÊ¹ÓÃµÄ·Ö¸ô·û"; 
+    txtDelimiter.helpTip = "å•è¯ä¹‹é—´ä½¿ç”¨çš„åˆ†éš”ç¬¦"; 
     txtDelimiter.text = "_"; 
     txtDelimiter.preferredSize.width = 22; 
 
@@ -2709,9 +2709,9 @@ function makeMainDialog() {
     grpCasing.margins = 0; 
 
     var lblLetterCasing = grpCasing.add("statictext", undefined, undefined, {name: "lblLetterCasing"}); 
-    lblLetterCasing.text = "×ÖÄ¸´óĞ¡Ğ´"; 
+    lblLetterCasing.text = "å­—æ¯å¤§å°å†™"; 
 
-    var ddLetterCasing_array = ["±£³Ö","Ğ¡Ğ´","´óĞ´"]; 
+    var ddLetterCasing_array = ["ä¿æŒ","å°å†™","å¤§å†™"]; 
     var ddLetterCasing = grpCasing.add("dropdownlist", undefined, undefined, {name: "ddLetterCasing", items: ddLetterCasing_array}); 
     ddLetterCasing.selection = 0; 
 
@@ -2732,11 +2732,11 @@ function makeMainDialog() {
     grpPrefixSuffixLabel.margins = [0,0,0,0]; 
 
     var lblPrefix = grpPrefixSuffixLabel.add("statictext", undefined, undefined, {name: "lblPrefix"}); 
-    lblPrefix.text = "Ç°×º"; 
+    lblPrefix.text = "å‰ç¼€"; 
     lblPrefix.alignment = ["left","center"]; 
 
     var lblSuffix = grpPrefixSuffixLabel.add("statictext", undefined, undefined, {name: "lblSuffix"}); 
-    lblSuffix.text = "ºó×º"; 
+    lblSuffix.text = "åç¼€"; 
 
     // GRPPREFIXSUFFIX
     // ===============
@@ -2747,14 +2747,14 @@ function makeMainDialog() {
     grpPrefixSuffix.margins = 0; 
 
     var txtPrefix = grpPrefixSuffix.add('edittext {properties: {name: "txtPrefix"}}'); 
-    txtPrefix.helpTip = "Ã¿¸öÍ¼²ãÃû³ÆÇ°¶¼»áÌí¼ÓÇ°×º"; 
+    txtPrefix.helpTip = "æ¯ä¸ªå›¾å±‚åç§°å‰éƒ½ä¼šæ·»åŠ å‰ç¼€"; 
     txtPrefix.preferredSize.width = 100; 
 
     var lblEllipsis = grpPrefixSuffix.add("statictext", undefined, undefined, {name: "lblEllipsis"}); 
     lblEllipsis.text = "..."; 
 
     var txtSuffix = grpPrefixSuffix.add('edittext {properties: {name: "txtSuffix"}}'); 
-    txtSuffix.helpTip = "Ã¿¸öÍ¼²ãÃû³Æºó¶¼»áÌí¼Óºó×º"; 
+    txtSuffix.helpTip = "æ¯ä¸ªå›¾å±‚åç§°åéƒ½ä¼šæ·»åŠ åç¼€"; 
     txtSuffix.preferredSize.width = 100; 
 
     // GRPCOL2
@@ -2776,8 +2776,8 @@ function makeMainDialog() {
     grpActions.alignment = ["fill","center"]; 
 
     var btnRun = grpActions.add("button", undefined, undefined, {name: "btnRun"}); 
-    btnRun.helpTip = "Ê¹ÓÃÑ¡¶¨µÄÉèÖÃÔËĞĞ½Å±¾"; 
-    btnRun.text = "ÔËĞĞ"; 
+    btnRun.helpTip = "ä½¿ç”¨é€‰å®šçš„è®¾ç½®è¿è¡Œè„šæœ¬"; 
+    btnRun.text = "è¿è¡Œ"; 
 
     // GRPCLOSEBUTTONS
     // ===============
@@ -2788,30 +2788,30 @@ function makeMainDialog() {
     grpCloseButtons.margins = 0; 
 
     var btnCancel = grpCloseButtons.add("button", undefined, undefined, {name: "btnCancel"}); 
-    btnCancel.helpTip = "¹Ø±Õ¶Ô»°¿ò²¢ÇÒ²»±£´æÈÎºÎ¸ü¸Ä"; 
-    btnCancel.text = "È¡Ïû"; 
+    btnCancel.helpTip = "å…³é—­å¯¹è¯æ¡†å¹¶ä¸”ä¸ä¿å­˜ä»»ä½•æ›´æ”¹"; 
+    btnCancel.text = "å–æ¶ˆ"; 
     btnCancel.preferredSize.width = 111; 
 
     var btnSaveAndCancel = grpCloseButtons.add("button", undefined, undefined, {name: "btnSaveAndCancel"}); 
-    btnSaveAndCancel.helpTip = "¹Ø±Õ¶Ô»°¿òµ«±£´æËù×öµÄÈÎºÎ¸ü¸Ä"; 
-    btnSaveAndCancel.text = "±£´æ²¢¹Ø±Õ"; 
+    btnSaveAndCancel.helpTip = "å…³é—­å¯¹è¯æ¡†ä½†ä¿å­˜æ‰€åšçš„ä»»ä½•æ›´æ”¹"; 
+    btnSaveAndCancel.text = "ä¿å­˜å¹¶å…³é—­"; 
 
     // GRPACTIONS
     // ==========
     var cbOverwriteFiles = grpActions.add("checkbox", undefined, undefined, {name: "cbOverwriteFiles"}); 
-    cbOverwriteFiles.helpTip = "Èç¹ûÑ¡ÖĞ£¬½«¸²¸ÇÏÖÓĞÎÄ¼ş£¨Èç¹ûËüÃÇ¾ßÓĞÏàÍ¬µÄÃû³Æ£©¡£·ñÔòËü»áÖÆ×÷¶ÀÌØµÄ¸±±¾"; 
-    cbOverwriteFiles.text = "¸²¸ÇÏÖÓĞÎÄ¼ş"; 
+    cbOverwriteFiles.helpTip = "å¦‚æœé€‰ä¸­ï¼Œå°†è¦†ç›–ç°æœ‰æ–‡ä»¶ï¼ˆå¦‚æœå®ƒä»¬å…·æœ‰ç›¸åŒçš„åç§°ï¼‰ã€‚å¦åˆ™å®ƒä¼šåˆ¶ä½œç‹¬ç‰¹çš„å‰¯æœ¬"; 
+    cbOverwriteFiles.text = "è¦†ç›–ç°æœ‰æ–‡ä»¶"; 
     cbOverwriteFiles.alignment = ["center","top"]; 
 
     var cbSilent = grpActions.add("checkbox", undefined, undefined, {name: "cbSilent"}); 
-    cbSilent.helpTip = "Èç¹ûÑ¡ÖĞ£¬½«ÔÚÃ»ÓĞ½ø¶ÈÌõºÍ³É¹¦È·ÈÏµÄÇé¿öÏÂÔËĞĞ¡£"; 
-    cbSilent.text = "¾²Ä¬ÔËĞĞ"; 
+    cbSilent.helpTip = "å¦‚æœé€‰ä¸­ï¼Œå°†åœ¨æ²¡æœ‰è¿›åº¦æ¡å’ŒæˆåŠŸç¡®è®¤çš„æƒ…å†µä¸‹è¿è¡Œã€‚"; 
+    cbSilent.text = "é™é»˜è¿è¡Œ"; 
     cbSilent.alignment = ["center","top"]; 
 
     // PNLOUTPUT
     // =========
     var pnlOutput = grpCol2.add("panel", undefined, undefined, {name: "pnlOutput"}); 
-    pnlOutput.text = "Êä³öÑ¡Ïî"; 
+    pnlOutput.text = "è¾“å‡ºé€‰é¡¹"; 
     pnlOutput.orientation = "column"; 
     pnlOutput.alignChildren = ["left","top"]; 
     pnlOutput.spacing = 10; 
@@ -2827,16 +2827,16 @@ function makeMainDialog() {
     grpGroupsAs.margins = 0; 
 
     var cbGroupsAsFolders = grpGroupsAs.add("checkbox", undefined, undefined, {name: "cbGroupsAsFolders"}); 
-    cbGroupsAsFolders.helpTip = "×éºÍ×Ó×é±£´æÎªÄ¿Â¼¡£"; 
-    cbGroupsAsFolders.text = "×é×÷ÎªÎÄ¼ş¼Ğ"; 
+    cbGroupsAsFolders.helpTip = "ç»„å’Œå­ç»„ä¿å­˜ä¸ºç›®å½•ã€‚"; 
+    cbGroupsAsFolders.text = "ç»„ä½œä¸ºæ–‡ä»¶å¤¹"; 
 
     var cbTopGroupsAsFolders = grpGroupsAs.add("checkbox", undefined, undefined, {name: "cbTopGroupsAsFolders"}); 
-    cbTopGroupsAsFolders.helpTip = "×é±£´æÎªÄ¿Â¼¡£Ç¶Ì××éÖĞµÄÍ¼²ã½«±£´æÔÚÆä×î¶¥²ãµÄ×éÖĞ¡£"; 
-    cbTopGroupsAsFolders.text = "Ê×¸ö×é×÷ÎªÎÄ¼ş¼Ğ"; 
+    cbTopGroupsAsFolders.helpTip = "ç»„ä¿å­˜ä¸ºç›®å½•ã€‚åµŒå¥—ç»„ä¸­çš„å›¾å±‚å°†ä¿å­˜åœ¨å…¶æœ€é¡¶å±‚çš„ç»„ä¸­ã€‚"; 
+    cbTopGroupsAsFolders.text = "é¦–ä¸ªç»„ä½œä¸ºæ–‡ä»¶å¤¹"; 
 
     var cbTopGroupsAsLayers = grpGroupsAs.add("checkbox", undefined, undefined, {name: "cbTopGroupsAsLayers"}); 
-    cbTopGroupsAsLayers.helpTip = "¶¥¼¶×é½«ÔÚµ¼³öÖ®Ç°½«ÆäËùÓĞ×Ó¼¶ºÏ²¢µ½Ò»¸öÍ¼²ãÖĞ"; 
-    cbTopGroupsAsLayers.text = "½«×éºÏ²¢ÎªÍ¼²ã"; 
+    cbTopGroupsAsLayers.helpTip = "é¡¶çº§ç»„å°†åœ¨å¯¼å‡ºä¹‹å‰å°†å…¶æ‰€æœ‰å­çº§åˆå¹¶åˆ°ä¸€ä¸ªå›¾å±‚ä¸­"; 
+    cbTopGroupsAsLayers.text = "å°†ç»„åˆå¹¶ä¸ºå›¾å±‚"; 
 
     // PNLOUTPUT
     // =========
@@ -2852,17 +2852,17 @@ function makeMainDialog() {
     grpForegroundBackground.margins = 0; 
 
     var cbForeground = grpForegroundBackground.add("checkbox", undefined, undefined, {name: "cbForeground"}); 
-    cbForeground.helpTip = "¶¥²ã½«ÔÚÃ¿´Îµ¼³öÖĞÓÃ×÷Ç°¾°¡£ÀıÈçÔÚĞèÒª¼ÓË®Ó¡µÄÊ±ºò"; 
-    cbForeground.text = "¶¥²ã×÷ÎªÇ°¾°"; 
+    cbForeground.helpTip = "é¡¶å±‚å°†åœ¨æ¯æ¬¡å¯¼å‡ºä¸­ç”¨ä½œå‰æ™¯ã€‚ä¾‹å¦‚åœ¨éœ€è¦åŠ æ°´å°çš„æ—¶å€™"; 
+    cbForeground.text = "é¡¶å±‚ä½œä¸ºå‰æ™¯"; 
 
     var cbBackground = grpForegroundBackground.add("checkbox", undefined, undefined, {name: "cbBackground"}); 
-    cbBackground.helpTip = "µ×²ã½«ÔÚÃ¿´Îµ¼³öÊ±ÓÃ×÷±³¾°¡£ÀıÈçÅúÁ¿Ö¤¼şÕÕ"; 
-    cbBackground.text = "µ×²ã×÷Îª±³¾°"; 
+    cbBackground.helpTip = "åº•å±‚å°†åœ¨æ¯æ¬¡å¯¼å‡ºæ—¶ç”¨ä½œèƒŒæ™¯ã€‚ä¾‹å¦‚æ‰¹é‡è¯ä»¶ç…§"; 
+    cbBackground.text = "åº•å±‚ä½œä¸ºèƒŒæ™¯"; 
 
     // PNLMODIFYLAYERS
     // ===============
     var pnlModifyLayers = grpCol2.add("panel", undefined, undefined, {name: "pnlModifyLayers"}); 
-    pnlModifyLayers.text = "ĞŞ¸ÄÍ¼²ã"; 
+    pnlModifyLayers.text = "ä¿®æ”¹å›¾å±‚"; 
     pnlModifyLayers.orientation = "column"; 
     pnlModifyLayers.alignChildren = ["left","top"]; 
     pnlModifyLayers.spacing = 5; 
@@ -2878,10 +2878,10 @@ function makeMainDialog() {
     grpTrim.margins = 0; 
 
     var cbTrim = grpTrim.add("checkbox", undefined, undefined, {name: "cbTrim"}); 
-    cbTrim.helpTip = "µ¼³öÇ°ÊÇ·ñÈ¥³ı¿Õ¸ñ"; 
-    cbTrim.text = "È¥³ı¿Õ¸ñ"; 
+    cbTrim.helpTip = "å¯¼å‡ºå‰æ˜¯å¦å»é™¤ç©ºæ ¼"; 
+    cbTrim.text = "å»é™¤ç©ºæ ¼"; 
 
-    var ddTrim_array = ["ËùÓĞ","Ê¹ÓÃtrim()","×éºÏ"]; 
+    var ddTrim_array = ["æ‰€æœ‰","ä½¿ç”¨trim()","ç»„åˆ"]; 
     var ddTrim = grpTrim.add("dropdownlist", undefined, undefined, {name: "ddTrim", items: ddTrim_array}); 
     ddTrim.selection = 0; 
 
@@ -2894,8 +2894,8 @@ function makeMainDialog() {
     grpPadding.margins = 0; 
 
     var cbPadding = grpPadding.add("checkbox", undefined, undefined, {name: "cbPadding"}); 
-    cbPadding.helpTip = "µ¼³öÇ°ÊÇ·ñÎªÃ¿²ãÌí¼ÓÄÚ±ß¾à"; 
-    cbPadding.text = "ÄÚ±ß¾à"; 
+    cbPadding.helpTip = "å¯¼å‡ºå‰æ˜¯å¦ä¸ºæ¯å±‚æ·»åŠ å†…è¾¹è·"; 
+    cbPadding.text = "å†…è¾¹è·"; 
 
     // GRPPADDINGLABEL
     // ===============
@@ -2921,8 +2921,8 @@ function makeMainDialog() {
     grpScale.margins = 0; 
 
     var cbScale = grpScale.add("checkbox", undefined, undefined, {name: "cbScale"}); 
-    cbScale.helpTip = "µ¼³öÇ°ÊÇ·ñËõ·ÅÃ¿Ò»²ã"; 
-    cbScale.text = "Ëõ·Å"; 
+    cbScale.helpTip = "å¯¼å‡ºå‰æ˜¯å¦ç¼©æ”¾æ¯ä¸€å±‚"; 
+    cbScale.text = "ç¼©æ”¾"; 
 
     // GRPSCALELABEL
     // =============
@@ -2942,7 +2942,7 @@ function makeMainDialog() {
     // PNLEXPORTAS
     // ===========
     var pnlExportAs = dialog.add("panel", undefined, undefined, {name: "pnlExportAs", borderStyle: "none"}); 
-    pnlExportAs.text = "µ¼³öÎª"; 
+    pnlExportAs.text = "å¯¼å‡ºä¸º"; 
     pnlExportAs.orientation = "column"; 
     pnlExportAs.alignChildren = ["center","center"]; 
     pnlExportAs.spacing = 10; 
@@ -2985,10 +2985,10 @@ function makeMainDialog() {
     // TABPNG24
     // ========
     var cbPng24Transparency = tabPng24.add("checkbox", undefined, undefined, {name: "cbPng24Transparency"}); 
-    cbPng24Transparency.text = "Í¸Ã÷¶È"; 
+    cbPng24Transparency.text = "é€æ˜åº¦"; 
 
     var cbPng24Interlaced = tabPng24.add("checkbox", undefined, undefined, {name: "cbPng24Interlaced"}); 
-    cbPng24Interlaced.text = "¸ôĞĞÉ¨Ãè"; 
+    cbPng24Interlaced.text = "éš”è¡Œæ‰«æ"; 
 
     // TABPNG8
     // =======
@@ -3008,7 +3008,7 @@ function makeMainDialog() {
     grpPng8ColorReduction.margins = 0; 
 
     var lblPng8ColorReduction = grpPng8ColorReduction.add("statictext", undefined, undefined, {name: "lblPng8ColorReduction"}); 
-    lblPng8ColorReduction.text = "É«²Ê»¹Ô­"; 
+    lblPng8ColorReduction.text = "è‰²å½©è¿˜åŸ"; 
 
     var ddPng8ColorReduction_array = ["Perceptual","Selective","Adaptive","Restrictive (Web)","-","Black & White","Grayscale","Mac OS","Windows"]; 
     var ddPng8ColorReduction = grpPng8ColorReduction.add("dropdownlist", undefined, undefined, {name: "ddPng8ColorReduction", items: ddPng8ColorReduction_array}); 
@@ -3023,7 +3023,7 @@ function makeMainDialog() {
     grpPng8NumberOfColors.margins = 0; 
 
     var lblNumberOfColors = grpPng8NumberOfColors.add("statictext", undefined, undefined, {name: "lblNumberOfColors"}); 
-    lblNumberOfColors.text = "ÑÕÉ«ÊıÁ¿"; 
+    lblNumberOfColors.text = "é¢œè‰²æ•°é‡"; 
 
     var txtPng8NumberofColors = grpPng8NumberOfColors.add('edittext {properties: {name: "txtPng8NumberofColors"}}'); 
     txtPng8NumberofColors.preferredSize.width = 36; 
@@ -3037,7 +3037,7 @@ function makeMainDialog() {
     grpPng8Dither.margins = 0; 
 
     var lblPng8Dither = grpPng8Dither.add("statictext", undefined, undefined, {name: "lblPng8Dither"}); 
-    lblPng8Dither.text = "¶¶¶¯"; 
+    lblPng8Dither.text = "æŠ–åŠ¨"; 
 
     var ddPng8Dither_array = ["None","Diffusion","Pattern","Noise"]; 
     var ddPng8Dither = grpPng8Dither.add("dropdownlist", undefined, undefined, {name: "ddPng8Dither", items: ddPng8Dither_array}); 
@@ -3085,7 +3085,7 @@ function makeMainDialog() {
     grpPng8Transparency.margins = 0; 
 
     var cbPng8Transparency = grpPng8Transparency.add("checkbox", undefined, undefined, {name: "cbPng8Transparency"}); 
-    cbPng8Transparency.text = "Í¸Ã÷¶È"; 
+    cbPng8Transparency.text = "é€æ˜åº¦"; 
 
     // GRPPNG8TRANSPARENCYDITHER
     // =========================
@@ -3097,7 +3097,7 @@ function makeMainDialog() {
     grpPng8TransparencyDither.margins = 0; 
 
     var lblPng8TransparencyDither = grpPng8TransparencyDither.add("statictext", undefined, undefined, {name: "lblPng8TransparencyDither"}); 
-    lblPng8TransparencyDither.text = "Í¸Ã÷¶È¶¶¶¯"; 
+    lblPng8TransparencyDither.text = "é€æ˜åº¦æŠ–åŠ¨"; 
 
     var ddPng8TransparencyDither_array = ["None","Diffusion","Pattern","Noise"]; 
     var ddPng8TransparencyDither = grpPng8TransparencyDither.add("dropdownlist", undefined, undefined, {name: "ddPng8TransparencyDither", items: ddPng8TransparencyDither_array}); 
@@ -3115,7 +3115,7 @@ function makeMainDialog() {
     // TABPNG8
     // =======
     var cbPng8Interlaced = tabPng8.add("checkbox", undefined, undefined, {name: "cbPng8Interlaced"}); 
-    cbPng8Interlaced.text = "¸ôĞĞÉ¨Ãè"; 
+    cbPng8Interlaced.text = "éš”è¡Œæ‰«æ"; 
 
     // TABJPG
     // ======
@@ -3135,7 +3135,7 @@ function makeMainDialog() {
     grpJpgQuality.margins = 0; 
 
     var lblQuality = grpJpgQuality.add("statictext", undefined, undefined, {name: "lblQuality"}); 
-    lblQuality.text = "ÖÊÁ¿"; 
+    lblQuality.text = "è´¨é‡"; 
 
     var sldrJpgQuality = grpJpgQuality.add("slider", undefined, undefined, undefined, undefined, {name: "sldrJpgQuality"}); 
     sldrJpgQuality.minvalue = 0; 
@@ -3167,7 +3167,7 @@ function makeMainDialog() {
     cbJpgIcc.text = "ICC Profile"; 
 
     var cbJpgOptimized = tabJpg.add("checkbox", undefined, undefined, {name: "cbJpgOptimized"}); 
-    cbJpgOptimized.text = "ÓÅ»¯"; 
+    cbJpgOptimized.text = "ä¼˜åŒ–"; 
 
     var cbJpgProgressive = tabJpg.add("checkbox", undefined, undefined, {name: "cbJpgProgressive"}); 
     cbJpgProgressive.text = "Progressive"; 
@@ -3190,7 +3190,7 @@ function makeMainDialog() {
     grpTifEncoding.margins = 0; 
 
     var lblTifEncoding = grpTifEncoding.add("statictext", undefined, undefined, {name: "lblTifEncoding"}); 
-    lblTifEncoding.text = "Í¼ÏñÑ¹Ëõ"; 
+    lblTifEncoding.text = "å›¾åƒå‹ç¼©"; 
 
     var ddTifEncoding_array = ["None","LZW","ZIP","JPG"]; 
     var ddTifEncoding = grpTifEncoding.add("dropdownlist", undefined, undefined, {name: "ddTifEncoding", items: ddTifEncoding_array}); 
@@ -3205,7 +3205,7 @@ function makeMainDialog() {
     grpTifQuality.margins = 0; 
 
     var lblTifQuality = grpTifQuality.add("statictext", undefined, undefined, {name: "lblTifQuality"}); 
-    lblTifQuality.text = "ÖÊÁ¿"; 
+    lblTifQuality.text = "è´¨é‡"; 
 
     var sldrTifQuality = grpTifQuality.add("slider", undefined, undefined, undefined, undefined, {name: "sldrTifQuality"}); 
     sldrTifQuality.minvalue = 0; 
@@ -3219,13 +3219,13 @@ function makeMainDialog() {
     // TABTIF
     // ======
     var cbTifWithAlpha = tabTif.add("checkbox", undefined, undefined, {name: "cbTifWithAlpha"}); 
-    cbTifWithAlpha.text = "´ø Alpha Í¨µÀ"; 
+    cbTifWithAlpha.text = "å¸¦ Alpha é€šé“"; 
 
     var cbTifIcc = tabTif.add("checkbox", undefined, undefined, {name: "cbTifIcc"}); 
     cbTifIcc.text = "ICC Profile"; 
 
     var cbTifTransparency = tabTif.add("checkbox", undefined, undefined, {name: "cbTifTransparency"}); 
-    cbTifTransparency.text = "Í¸Ã÷¶È"; 
+    cbTifTransparency.text = "é€æ˜åº¦"; 
 
     // TABPDF
     // ======
@@ -3245,14 +3245,14 @@ function makeMainDialog() {
     grpPdfStandard.margins = 0; 
 
     var lblPdfStandard = grpPdfStandard.add("statictext", undefined, undefined, {name: "lblPdfStandard"}); 
-    lblPdfStandard.text = "±ê×¼"; 
+    lblPdfStandard.text = "æ ‡å‡†"; 
 
     var ddPdfStandard_array = ["None","PDF/X-1a:2001","PDF/X-1a:2003","PDF/X-3:2002","PDF/X-3:2003","PDF/X-4:2010"]; 
     var ddPdfStandard = grpPdfStandard.add("dropdownlist", undefined, undefined, {name: "ddPdfStandard", items: ddPdfStandard_array}); 
     ddPdfStandard.selection = 0; 
 
     var lblPdfCompatibility = grpPdfStandard.add("statictext", undefined, undefined, {name: "lblPdfCompatibility"}); 
-    lblPdfCompatibility.text = "¼æÈİĞÔ"; 
+    lblPdfCompatibility.text = "å…¼å®¹æ€§"; 
 
     var ddPdfCompatibility_array = ["Acrobat 4 (PDF 1.3)","Acrobat 5 (PDF 1.4)","Acrobat 6 (PDF 1.5)","Acrobat 7 (PDF 1.6)","Acrobat 8 (PDF 1.7)"]; 
     var ddPdfCompatibility = grpPdfStandard.add("dropdownlist", undefined, undefined, {name: "ddPdfCompatibility", items: ddPdfCompatibility_array}); 
@@ -3267,7 +3267,7 @@ function makeMainDialog() {
     grpPdfColorConversion.margins = 0; 
 
     var cbPdfColorConversion = grpPdfColorConversion.add("checkbox", undefined, undefined, {name: "cbPdfColorConversion"}); 
-    cbPdfColorConversion.text = "ÑÕÉ«×ª»»"; 
+    cbPdfColorConversion.text = "é¢œè‰²è½¬æ¢"; 
 
     // GRPPDFDESTINATIONPROFILE
     // ========================
@@ -3330,7 +3330,7 @@ function makeMainDialog() {
     grpPdfEncoding.margins = 0; 
 
     var lblPdfEncoding = grpPdfEncoding.add("statictext", undefined, undefined, {name: "lblPdfEncoding"}); 
-    lblPdfEncoding.text = "Ñ¹Ëõ"; 
+    lblPdfEncoding.text = "å‹ç¼©"; 
 
     var ddPdfEncoding_array = ["None","ZIP","JPEG"]; 
     var ddPdfEncoding = grpPdfEncoding.add("dropdownlist", undefined, undefined, {name: "ddPdfEncoding", items: ddPdfEncoding_array}); 
@@ -3345,7 +3345,7 @@ function makeMainDialog() {
     grpPdfQuality.margins = 0; 
 
     var lblPdfQuality = grpPdfQuality.add("statictext", undefined, undefined, {name: "lblPdfQuality"}); 
-    lblPdfQuality.text = "ÖÊÁ¿"; 
+    lblPdfQuality.text = "è´¨é‡"; 
 
     var sldrPdfQuality = grpPdfQuality.add("slider", undefined, undefined, undefined, undefined, {name: "sldrPdfQuality"}); 
     sldrPdfQuality.minvalue = 0; 
@@ -3359,7 +3359,7 @@ function makeMainDialog() {
     // TABPDF
     // ======
     var cbPdfWithAlpha = tabPdf.add("checkbox", undefined, undefined, {name: "cbPdfWithAlpha"}); 
-    cbPdfWithAlpha.text = "´ø Alpha Í¨µÀ"; 
+    cbPdfWithAlpha.text = "å¸¦ Alpha é€šé“"; 
 
     var cbPdfIcc = tabPdf.add("checkbox", undefined, undefined, {name: "cbPdfIcc"}); 
     cbPdfIcc.text = "ICC Profile"; 
@@ -3391,7 +3391,7 @@ function makeMainDialog() {
     // TABTGA
     // ======
     var cbTgaWithAlpha = tabTga.add("checkbox", undefined, undefined, {name: "cbTgaWithAlpha"}); 
-    cbTgaWithAlpha.text = "´ø Alpha Í¨µÀ"; 
+    cbTgaWithAlpha.text = "å¸¦ Alpha é€šé“"; 
 
     var cbTgaRleCompression = tabTga.add("checkbox", undefined, undefined, {name: "cbTgaRleCompression"}); 
     cbTgaRleCompression.text = "RLE Compression"; 
@@ -3423,7 +3423,7 @@ function makeMainDialog() {
     // TABBMP
     // ======
     var cbBmpWithAlpha = tabBmp.add("checkbox", undefined, undefined, {name: "cbBmpWithAlpha"}); 
-    cbBmpWithAlpha.text = "´ø Alpha Í¨µÀ"; 
+    cbBmpWithAlpha.text = "å¸¦ Alpha é€šé“"; 
 
     var cbBmpRleCompression = tabBmp.add("checkbox", undefined, undefined, {name: "cbBmpRleCompression"}); 
     cbBmpRleCompression.text = "RLE Compression"; 
