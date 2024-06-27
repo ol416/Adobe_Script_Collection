@@ -1191,13 +1191,20 @@ function showDialog() {
     // ===================
     fields.cbRelative.value = prefs.relative;
     fields.cbRelative.enabled = true;
+    var activeDocumentPath = app.activeDocument.path.fsName;
+    var relativePath = activeDocumentPath;
     if (prefs.relative) {
         // 如果是相对路径，将其转换为相对于当前文档的路径
-        var activeDocumentPath = app.activeDocument.path.fsName;
-        var relativePath = activeDocumentPath;
         fields.txtDestination.text = relativePath;
     }else{
         fields.txtDestination.text = prefs.destination;
+    }
+    fields.cbRelative.onClick = function() {
+        if(fields.cbRelative.value){
+            fields.txtDestination.text = relativePath
+        }else{
+            fields.txtDestination.text = prefs.destination;
+        }
     }
     fields.btnBrowse.onClick = function() {
         var newFilePath = Folder.selectDialog("Select destination folder", prefs.destination);
