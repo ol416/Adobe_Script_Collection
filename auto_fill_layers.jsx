@@ -1,11 +1,9 @@
 #target photoshop
 <javascriptresource>
-
 <name>自动填充栅格化后的空白区域</name>
-
 <category>custom</category>
-
 </javascriptresource>
+
 function main() {
     if (!documents.length) {
         alert("请打开一个文档并选择至少一个图层。");
@@ -22,7 +20,13 @@ function main() {
 
     for (var i = 0; i < selectedLayers.length; i++) {
         var layer = selectedLayers[i];
-        if (i == 0 && selectedLayers.length >1){
+        if (layer.kind == LayerKind.SMARTOBJECT) {
+            continue; // 跳过智能对象图层
+        }
+        if (layer.linkedLayers.length > 0) {
+            continue; // 跳过链接的图层
+        }
+        if (i == 0 && selectedLayers.length > 1) {
             doc.activeLayer = selectedLayers[1];
         }
         doc.activeLayer = layer;
