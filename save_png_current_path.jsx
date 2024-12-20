@@ -16,6 +16,7 @@ function saveAsPNG(fileName, quality,compression) {
   var pngSaveOptions = new PNGSaveOptions();
   pngSaveOptions.quality = quality;
   pngSaveOptions.compression = compression; // 使用 ZIP 压缩
+  pngSaveOptions.interlace = false; // 不交错
   activeDocument.saveAs(saveFile, pngSaveOptions, true, Extension.LOWERCASE);
 }
 
