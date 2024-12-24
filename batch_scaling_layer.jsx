@@ -1,3 +1,8 @@
+#target photoshop
+<javascriptresource>
+<name>批量缩放图片</name>
+<category>custom</category>
+</javascriptresource>
 // Photoshop脚本：批量缩放选中的图层，支持锚点选择、相对/绝对缩放模式，持久化存储配置
 function scaleSelectedLayers() {
     if (!app.documents.length) {
