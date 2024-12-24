@@ -72,23 +72,40 @@ function scaleSelectedLayers() {
             var layer = selectedLayers[i];
             app.activeDocument.activeLayer = layer;
 
+            if (layer.typename === "LayerSet"){
+                alert("无法对组进行缩放操作，请选择组内的图层。");
+                continue;
+            }
             if (scaleMode === 0) {
                 layer.resize(scaleValue, scaleValue, anchorPosition);
-            } else if (scaleMode === 1) {
-                var layerBounds = layer.bounds;
-                var currentWidth = (layerBounds[2].as('px') - layerBounds[0].as('px'));
-                var currentHeight = (layerBounds[3].as('px') - layerBounds[1].as('px'));
+            } else if (scaleMode === 1) {                if (layer.kind === LayerKind.SMARTOBJECT || layer.linkedLayers.length > 0) {
+                    var ref = new ActionReference();
+                    ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
+                    var obj = executeActionGet(ref).getObjectValue(stringIDToTypeID("smartObjectMore"));
+                    with(obj) {
+                        var _tmp = getObjectValue(stringIDToTypeID("size"));
+                        var size = new Object({
+                            width: _tmp.getDouble(stringIDToTypeID("width")),
+                            height: _tmp.getDouble(stringIDToTypeID("height")),
+                        });
+                        // alert(size.width + " " + size.height);
+                    }
+                }
 
-                var w_new = scaleValue / 100 * currentWidth;
-                var h_new = scaleValue / 100 * currentHeight;
-                layer.resize(w_new / currentWidth * 100, h_new / currentHeight * 100, anchorPosition);
+                // 绝对缩放
+                layerbound = layer.bounds;                
+                var currentWidth = (layerbound[2].as('px') - layerbound[0].as('px'));
+                var currentHeight = (layerbound[3].as('px') - layerbound[1].as('px'));
+                var w_new = scaleValue*size.width/currentWidth;
+                var h_new = scaleValue*size.height/currentHeight;                
+                layer.resize(w_new, h_new);
             }
 
             // 调用居中函数
             centerLayer(layer, anchorPosition);
         }
 
-        alert("选中图层的缩放和居中操作已完成！");
+        // alert("选中图层的缩放和居中操作已完成！");
         dialog.close();
     };
 
