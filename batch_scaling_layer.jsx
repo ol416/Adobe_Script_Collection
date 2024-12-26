@@ -27,7 +27,7 @@ function scaleSelectedLayers() {
     // 缩放模式
     dialog.add("statictext", undefined, "缩放模式:");
     var scaleModeDropdown = dialog.add("dropdownlist", undefined, ["相对缩放（百分比）", "绝对缩放（百分比）"]);
-    scaleModeDropdown.selection = settings.scaleMode || 0;
+    scaleModeDropdown.selection = settings.scaleMode || 1;
 
     // 缩放值
     dialog.add("statictext", undefined, "缩放值:");
@@ -73,6 +73,8 @@ function scaleSelectedLayers() {
             AnchorPosition.BOTTOMRIGHT
         ][anchorIndex];
 
+        var currentRulerUnits = doc.resolution;
+
         for (var i = 0; i < selectedLayers.length; i++) {
             var layer = selectedLayers[i];
             app.activeDocument.activeLayer = layer;
@@ -83,7 +85,8 @@ function scaleSelectedLayers() {
             }
             if (scaleMode === 0) {
                 layer.resize(scaleValue, scaleValue, anchorPosition);
-            } else if (scaleMode === 1) {                if (layer.kind === LayerKind.SMARTOBJECT || layer.linkedLayers.length > 0) {
+            } else if (scaleMode === 1) {                
+                if (layer.kind === LayerKind.SMARTOBJECT || layer.linkedLayers.length > 0) {
                     var ref = new ActionReference();
                     ref.putEnumerated(charIDToTypeID("Lyr "), charIDToTypeID("Ordn"), charIDToTypeID("Trgt"));
                     var obj = executeActionGet(ref).getObjectValue(stringIDToTypeID("smartObjectMore"));
@@ -101,13 +104,15 @@ function scaleSelectedLayers() {
                 layerbound = layer.bounds;                
                 var currentWidth = (layerbound[2].as('px') - layerbound[0].as('px'));
                 var currentHeight = (layerbound[3].as('px') - layerbound[1].as('px'));
-                var w_new = scaleValue*size.width/currentWidth;
-                var h_new = scaleValue*size.height/currentHeight;                
+                
+                var smartObjectResolution = getSmartObjectResolution();
+                var w_new = calculateScaleFactor(currentWidth, scaleValue, size.width, smartObjectResolution, currentRulerUnits);
+                var h_new = calculateScaleFactor(currentHeight, scaleValue, size.height, smartObjectResolution, currentRulerUnits);
                 layer.resize(w_new, h_new);
             }
 
             // 调用居中函数
-            centerLayer(layer, anchorPosition);
+            // centerLayer(layer, anchorPosition);
         }
 
         // alert("选中图层的缩放和居中操作已完成！");
@@ -171,6 +176,43 @@ function getLayerCenter(layer) {
     };
 }
 
+// 计算新的缩放倍数
+function calculateScaleFactor(currentSize, targetScale, originalSize, smartObjectResolution, currentResolution) {
+    // return (targetScale / currentSize / (originalSize * smartObjectResolution / currentResolution)) * 100;
+    return (targetScale * originalSize * currentResolution)/(currentSize * smartObjectResolution);
+}
+
+// 获取当前智能对象的详细信息
+function getSmartObjectResolution() {
+    try {
+        // 创建引用目标图层的 ActionReference
+        var ref = new ActionReference();
+        ref.putProperty(app.stringIDToTypeID("property"), app.stringIDToTypeID("smartObjectMore"));
+        ref.putEnumerated(app.stringIDToTypeID("layer"), app.stringIDToTypeID("ordinal"), app.stringIDToTypeID("targetEnum"));
+        
+        // 获取图层描述符
+        var desc = executeActionGet(ref);
+        
+        // 检查是否包含智能对象信息
+        if (desc.hasKey(app.stringIDToTypeID("smartObjectMore"))) {
+            var smartObjectInfo = desc.getObjectValue(app.stringIDToTypeID("smartObjectMore"));
+            
+            // 获取分辨率
+            if (smartObjectInfo.hasKey(app.stringIDToTypeID("resolution"))) {
+                var resolution = smartObjectInfo.getDouble(app.stringIDToTypeID("resolution"));
+                return resolution; // 返回分辨率
+            } else {
+                throw new Error("智能对象中未找到分辨率信息！");
+            }
+        } else {
+            throw new Error("当前图层不是智能对象！");
+        }
+    } catch (e) {
+        alert("获取智能对象分辨率失败: " + e.message);
+        return null;
+    }
+}
+
 // 添加一个函数来居中图层
 function centerLayer(layer, anchorPosition) {
     var doc = app.activeDocument;
@@ -214,8 +256,6 @@ function centerLayer(layer, anchorPosition) {
     var deltaY = targetY - layerCenter.y;
     layer.translate(deltaX, deltaY);
 }
-
-
 
 // 持久化存储用户配置
 function saveSettings(settings) {
