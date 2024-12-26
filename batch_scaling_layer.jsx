@@ -1,4 +1,4 @@
-#target photoshop
+﻿#target photoshop
 <javascriptresource>
 <name>批量缩放图片</name>
 <category>custom</category>
@@ -108,7 +108,7 @@ function scaleSelectedLayers() {
                 var smartObjectResolution = getSmartObjectResolution();
                 var w_new = calculateScaleFactor(currentWidth, scaleValue, size.width, smartObjectResolution, currentRulerUnits);
                 var h_new = calculateScaleFactor(currentHeight, scaleValue, size.height, smartObjectResolution, currentRulerUnits);
-                layer.resize(w_new, h_new);
+                layer.resize(w_new, h_new,anchorPosition);
             }
 
             // 调用居中函数
