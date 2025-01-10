@@ -20,5 +20,24 @@ function saveAsPNG(fileName, quality,compression) {
   activeDocument.saveAs(saveFile, pngSaveOptions, true, Extension.LOWERCASE);
 }
 
+function saveAsWebPNG(fileName, quality,compression) {
+  preferences.rulerUnits = Units.PIXELS;
+
+  var doc = activeDocument;
+  // var exportPath = doc.fullName.toString().replace(/\.psd$/, '.png');
+
+  var newDoc = doc.duplicate();
+
+  var webOpt = new ExportOptionsSaveForWeb();
+  webOpt.format = SaveDocumentType.PNG;
+  webOpt.PNG8 = true; // PNG-24
+
+  var newFile = new File(savePath + "/" + prefix + fileName + ".png");
+  newDoc.exportDocument(newFile, ExportType.SAVEFORWEB, webOpt);
+
+  newDoc.close(SaveOptions.DONOTSAVECHANGES);
+}
+
 // 示例用法：
-saveAsPNG(docName, 100,6); // 保存为质量为 100 的 PNG
+// saveAsPNG(docName, 100,6); // 保存为质量为 100 的 PNG
+saveAsWebPNG(docName, 100,6); // 保存为质量为 100 的 PNG
