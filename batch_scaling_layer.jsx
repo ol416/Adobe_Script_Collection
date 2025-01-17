@@ -77,7 +77,7 @@ function scaleSelectedLayers() {
 
         for (var i = 0; i < selectedLayers.length; i++) {
             var layer = selectedLayers[i];
-            app.activeDocument.activeLayer = layer;
+            // app.activeDocument.activeLayer = layer;
 
             if (layer.typename === "LayerSet"){
                 alert("无法对组进行缩放操作，请选择组内的图层。");
