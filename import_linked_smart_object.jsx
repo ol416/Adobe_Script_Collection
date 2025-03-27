@@ -7,11 +7,20 @@
 
 </javascriptresource>
 
-// 获取当前打开的文档
 var doc = app.activeDocument;
 
-// 选择要插入的外部文件
-var files = File.openDialog("选择要插入的文件", "*.psd;*.jpg;*.png", true);
+
+function browseFile(path){
+    path = path ? path : Folder.desktop.absoluteURI;
+    var f = new File(path);
+    var files = f.openDlg(
+        "选择要插入的文件",
+        "*.psd;*.jpg;*.png",
+        true
+    );
+    if(!files) return [];
+    return files;
+}
 
 function showError(err) {
 	if (confirm('An unknown error has occurred.\n' +
@@ -42,6 +51,7 @@ function placeEvent(ID, null2, linked, horizontal, vertical) {
 	executeAction( s2t( "placeEvent" ), descriptor, DialogModes.NO );
 }
 
+var files = browseFile(doc.path);
 // 遍历选定的文件并插入为链接智能对象图层
 try {
     for (var i = 0; i < files.length; i++) {
@@ -65,6 +75,3 @@ catch(e) {
     //     showError(e);
     // }
 }
-
-// 提示完成
-// alert("批量置入链接智能对象完成！");
