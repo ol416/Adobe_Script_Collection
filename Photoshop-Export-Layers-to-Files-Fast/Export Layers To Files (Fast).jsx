@@ -2,7 +2,7 @@
 //  Export Layers To Files
 
 // VERSION:
-// v2.7.1
+// v2.7.3
 
 // REQUIRES:
 //  Adobe Photoshop CS2 or higher
@@ -409,6 +409,7 @@ var DEFAULT_SETTINGS = {
     useDelimiter: app.stringIDToTypeID("useDelimiter"),
     visibleOnly: app.stringIDToTypeID('visibleOnly'),
     relative: app.stringIDToTypeID('relative'),
+    exportFolders: app.stringIDToTypeID('exportFolders'),
 };
 
 //
@@ -1191,23 +1192,37 @@ function showDialog() {
     // ===================
     fields.cbRelative.value = prefs.relative;
     fields.cbRelative.enabled = true;
+    fields.txtExportFolders.text = prefs.exportFolders;
+    
     var activeDocumentPath = app.activeDocument.path.fsName;
     var relativePath = activeDocumentPath;
+    var seclectDestination = prefs.destination;
+
+    if (prefs.exportFolders) {
+        relativePath = activeDocumentPath + "/" + fields.txtExportFolders.text;
+        seclectDestination = seclectDestination + "/" + fields.txtExportFolders.text;
+    }
+
+    fields.txtExportFolders.onChange = function() {
+        relativePath = activeDocumentPath + "/" + this.text;
+        seclectDestination = seclectDestination + "/" + this.text;
+        
+    };
     if (prefs.relative) {
         // 如果是相对路径，将其转换为相对于当前文档的路径
         fields.txtDestination.text = relativePath;
     }else{
-        fields.txtDestination.text = prefs.destination;
+        fields.txtDestination.text = seclectDestination;
     }
     fields.cbRelative.onClick = function() {
         if(fields.cbRelative.value){
             fields.txtDestination.text = relativePath
         }else{
-            fields.txtDestination.text = prefs.destination;
+            fields.txtDestination.text = seclectDestination;
         }
     }
     fields.btnBrowse.onClick = function() {
-        var newFilePath = Folder.selectDialog("Select destination folder", prefs.destination);
+        var newFilePath = Folder.selectDialog("Select destination folder", seclectDestination);
         if (newFilePath) {
             fields.txtDestination.text = newFilePath.fsName;
         }
@@ -1577,6 +1592,7 @@ function saveSettings(dialog) {
     desc.putString(DEFAULT_SETTINGS.delimiter, fields.txtDelimiter.text);
     desc.putString(DEFAULT_SETTINGS.destination, fields.txtDestination.text);
     desc.putBoolean(DEFAULT_SETTINGS.relative, fields.cbRelative.value);
+    desc.putString(DEFAULT_SETTINGS.exportFolders, fields.txtExportFolders.text);
     desc.putBoolean(DEFAULT_SETTINGS.exportBackground, fields.cbBackground.value);
     desc.putBoolean(DEFAULT_SETTINGS.exportForeground, fields.cbForeground.value);
     desc.putInteger(DEFAULT_SETTINGS.exportLayerTarget, exportLayerTarget);
@@ -1667,6 +1683,7 @@ function getDefaultSettings() {
         // might throw if format changed or got corrupt
         result = {
             relative: false,
+            exportFolders: "",
             bmpAlphaChannel: false,
             bmpDepth: 0,
             bmpFlipRowOrder: false,
@@ -1815,6 +1832,7 @@ function getSettings(formatOpts) {
             useDelimiter: desc.getBoolean(DEFAULT_SETTINGS.useDelimiter),
             visibleOnly: desc.getBoolean(DEFAULT_SETTINGS.visibleOnly),
             relative: desc.getBoolean(DEFAULT_SETTINGS.relative),
+            exportFolders: desc.getString(DEFAULT_SETTINGS.exportFolders),
 
         };
     } catch (e) {
@@ -2486,6 +2504,7 @@ function getDialogFields(dialog) {
         btnBrowse: dialog.findElement("btnBrowse"),
         txtDestination: dialog.findElement("txtDestination"),
         cbRelative: dialog.findElement("cbRelative"),
+        txtExportFolders: dialog.findElement("txtExportFolders"),
 
         radioAll: dialog.findElement("radioAll"),
         radioSelected: dialog.findElement("radioSelected"),
@@ -2629,6 +2648,10 @@ function makeMainDialog() {
     var cbRelative = pnlDestination.add("checkbox", undefined, undefined, {name: "cbRelative"}); 
     cbRelative.helpTip = "将文件保存到当前目录"; 
     cbRelative.text = "相对路径"; 
+
+    var txtExportFolders = pnlDestination.add('edittext {properties: {name: "txtExportFolders"}}');
+    txtExportFolders.helpTip = "导出到指定文件夹";
+    txtExportFolders.preferredSize.width = 50;
 
     var txtDestination = pnlDestination.add('edittext {properties: {name: "txtDestination"}}'); 
     txtDestination.helpTip = "文件保存位置"; 
