@@ -9,7 +9,13 @@
 var prefix = "";
 // var docName = activeDocument.name.replace(/\.[^\.]+$/, '');
 var docName = "50"; //保存为50.jpg
-var saveFile = new File(activeDocument.path + "/" + prefix + docName);
+var basePath = activeDocument.path;
+var exportFolderName = "导出图片";
+var exportDir = new Folder(basePath + "/" + exportFolderName);
+var savePath = exportDir.exists ? exportDir.fsName : basePath.fsName;
+
+// 构建保存路径
+var saveFile = new File(savePath + "/" + prefix + docName);
 
 var qlty = 12; //set jpeg quality here
 var jpgFile = new File(saveFile);

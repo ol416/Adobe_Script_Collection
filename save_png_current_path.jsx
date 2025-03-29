@@ -9,7 +9,10 @@
 var prefix = "";
 // var docName = activeDocument.name.replace(/\.[^\.]+$/, '');
 var docName = "30" //将图片保存为30.png
-var savePath = activeDocument.path; // 缓存路径
+var basePath = activeDocument.path;
+var exportFolderName = "导出图片";
+var exportDir = new Folder(basePath + "/" + exportFolderName);
+var savePath = exportDir.exists ? exportDir.fsName : basePath.fsName;
 
 function saveAsPNG(fileName, quality,compression) {
   var saveFile = new File(savePath + "/" + prefix + fileName + ".png");
