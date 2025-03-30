@@ -1,4 +1,4 @@
-﻿#target photoshop
+#target photoshop
 <javascriptresource>
 
 <name>将切片保存为当前ppi的jpg图片</name>
@@ -59,6 +59,12 @@ try {
         throw "File not saved!"
     }
 
+    // 新增代码开始：检查导出文件夹是否存在
+    var exportFolderPath = pth.parent.fsName + "/导出图片";
+    var exportFolder = new Folder(exportFolderPath);
+    var savePath = exportFolder.exists ? exportFolderPath : pth.parent.fsName;
+    // 新增代码结束
+
     for (var i = 0; i < slices.count - 1; i++) {
         (r = new AR).putIdentifier(s2t('layer'), id);
         (d = new AD).putReference(s2t('target'), r);
@@ -101,8 +107,7 @@ try {
             var idextendedQuality = stringIDToTypeID("extendedQuality");
             actDesc.putInteger(idextendedQuality, 12); // 0-12
             (d = new AD).putObject(s2t("as"), s2t("JPEG"), actDesc, new AD);
-            // d.putPath(s2t("in"), File(pth.path + '/' + nm + ' ' + ('0' + (slices.count-1-i)).slice(-2) + '.jpg'));
-            d.putPath(s2t("in"), File(pth.path + '/' + '6' + ('0' + (slices.count-1-i)).slice(-2) + '.jpg'));
+            d.putPath(s2t("in"), File(savePath + '/' + '6' + ('0' + (slices.count-1-i)).slice(-2) + '.jpg'));
             d.putEnumerated(s2t("saveStage"), s2t("saveStageType"), s2t("saveBegin"));
             executeAction(s2t("save"), d, DialogModes.NO);
             ///// ADDITION TO ORIGINAL CODE - END /////            
