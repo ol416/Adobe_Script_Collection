@@ -59,11 +59,9 @@ try {
         throw "File not saved!"
     }
 
-    // 新增代码开始：检查导出文件夹是否存在
     var exportFolderPath = pth.parent.fsName + "/导出图片";
     var exportFolder = new Folder(exportFolderPath);
     var savePath = exportFolder.exists ? exportFolderPath : pth.parent.fsName;
-    // 新增代码结束
 
     for (var i = 0; i < slices.count - 1; i++) {
         (r = new AR).putIdentifier(s2t('layer'), id);
