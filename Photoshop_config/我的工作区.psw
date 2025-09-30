@@ -1,0 +1,609 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<photoshop-workspace version="2.0">
+	<photoshop-panel-configuration>
+<workspace version="1">
+	<dock anchor="top" content="control-bar" is-closed="false">
+		<control-bar id="1" origin="-15 -2" size="1903 33" is-closed="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAXAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAG8AcAB0AGkAbwBuAHMAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAAA"/>
+	</dock>
+	<dock anchor="bottom" content="palette" is-closed="false">
+		<tab-pane mode="expanded" preferred-iconic-length="0" layout-mode="auto-flow">
+			<tab-group active-palette="2" is-closed="true">
+				<palette id="2" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAZAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGEAbgBpAG0AYQB0AGkAbwBuAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAJPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAAAAAAABMZWZ0bG9uZwAAAcIAAAAAQnRvbWxvbmcAAAAAAAAAAFJnaHRsb25nAAABwk9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAB6AAAAAExlZnRsb25nAAABwgAAAABCdG9tbG9uZwAAAHoAAAAAUmdodGxvbmcAAAHC" host-cached-sizes="true"/>
+				<palette id="3" is-closed="true" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAbAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAG0AZQBhAHMAdQByAGUAbQBlAG4AdAAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAIAAAAAATGVmdGxvbmcAAADLAAAAAEJ0b21sb25nAAAAgAAAAABSZ2h0bG9uZwAAAMs=" host-cached-sizes="true"/>
+			</tab-group>
+		</tab-pane>
+	</dock>
+	<dock anchor="left" content="palette toolbar" is-closed="false">
+		<tab-pane mode="expanded" preferred-iconic-length="39" layout-mode="auto-flow">
+			<tab-group active-palette="5" is-closed="false">
+				<palette id="4" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAXAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGgAaQBzAHQAbwByAHkAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAEyAAAAAExlZnRsb25nAAABBAAAAABCdG9tbG9uZwAAAHwAAAAAUmdodGxvbmcAAAD6" host-cached-sizes="true"/>
+				<palette id="5" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAXAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGEAYwB0AGkAbwBuAHMAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAEyAAAAAExlZnRsb25nAAABBAAAAABCdG9tbG9uZwAAAYoAAAAAUmdodGxvbmcAAAD6" host-cached-sizes="true"/>
+				<palette id="6" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAA4AHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAHAAbAB1AGcAaQBuAHMAcABhAG4AZQBsAC8AcABsAHUAZwBpAG4AcwBQAGEAbgBlAGwAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAACAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAEyAAAAAExlZnRsb25nAAABBAAAAABCdG9tbG9uZwAAAfwAAAAAUmdodGxvbmcAAADwAAAAD3V4cFBhbmVsQXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAAVHRsIFRFWFQAAAADY9JO9gAA" host-cached-sizes="true"/>
+				<palette id="7" is-closed="true" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAABMAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAGMAYwB4AC4AYwBvAG0AbQBlAG4AdABzAC0AdwBlAGIAdgBpAGUAdwAvAGMAYwB4AC0AYwBvAG0AbQBlAG4AdABzAC0AdQB4AHAALQB3AGUAYgB2AGkAZQB3AAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAACcgAAAABMZWZ0bG9uZwAAAV4AAAAAQnRvbWxvbmcAAAK8AAAAAFJnaHRsb25nAAABXgAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAAA2zokcoAAA==" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="8" is-closed="false">
+				<palette id="8" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAUAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGkAbgBmAG8AAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAD3AAAAAExlZnRsb25nAAABBAAAAABCdG9tbG9uZwAAAPcAAAAAUmdodGxvbmcAAAEE" host-cached-sizes="true"/>
+				<palette id="9" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAZAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAG4AYQB2AGkAZwBhAHQAbwByAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAABqAAAAABMZWZ0bG9uZwAAAQQAAAAAQnRvbWxvbmcAAACIAAAAAFJnaHRsb25nAAAA1A==" host-cached-sizes="true"/>
+				<palette id="10" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAZAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGgAaQBzAHQAbwBnAHIAYQBtAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAwAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAXwAAAABMZWZ0bG9uZwAAAM4AAAAAQnRvbWxvbmcAAABfAAAAAFJnaHRsb25nAAAAzgAAAABIUGV4Ym9vbAAAAAAASFBzYWJvb2wA" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="11" is-closed="false">
+				<palette id="11" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAA2AHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AcwB3AGYALgBjAHMAeABzAC4AbQBlAC4AZwB1AGkAZABlAGcAdQBpAGQAZQAuAGEAZABvAGIAZQBlAHgAdABlAG4AcwBpAG8AbgAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAIAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAUAAAAAATGVmdGxvbmcAAAEEAAAAAEJ0b21sb25nAAABQAAAAABSZ2h0bG9uZwAAAQQAAAARZmxhc2hQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAAEAAAAAFR0bCBURVhUAAAACwBHAHUAaQBkAGUARwB1AGkAZABlAAAAAAAaaG9ub3JJbml0aWFsQVBFU2l6ZVJlcXVlc3Rib29sAAAAABNmbGFzaFBhbmVsUGFuZWxEYXRhVEVYVAAAAAEAAAAAACJkZWZhdWx0Q29uZmlnRm9yV29ya3NwYWNlSXNQZW5kaW5nYm9vbAE=" host-cached-sizes="true"/>
+				<palette id="12" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAiAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AcwB3AGYALgBjAHMAeABzAC4AZQBhAHMAeQAtAGMAdQB0AAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAABAgAAAABMZWZ0bG9uZwAAAOYAAAAAQnRvbWxvbmcAAAECAAAAAFJnaHRsb25nAAAA5gAAABFmbGFzaFBhbmVsQXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAQAAAAAVHRsIFRFWFQAAAAJAEUAYQBzAHkAIABDAHUAdAAAAAAAGmhvbm9ySW5pdGlhbEFQRVNpemVSZXF1ZXN0Ym9vbAAAAAATZmxhc2hQYW5lbFBhbmVsRGF0YVRFWFQAAAABAAAAAAAiZGVmYXVsdENvbmZpZ0ZvcldvcmtzcGFjZUlzUGVuZGluZ2Jvb2wB" host-cached-sizes="true"/>
+				<palette id="13" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAABQAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGUAeABhAG0AcABsAGUALgB3AGUAYgAtAHMAZQByAHYAaQBjAGUALQBjAGEAbABsAC0AcgBlAGEAZABlAHIALwB3AGUAYgAtAHMAZQByAHYAaQBjAGUALQBjAGEAbABsAC0AcgBlAGEAZABlAHIAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAACAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAE5AAAAAExlZnRsb25nAAABBAAAAABCdG9tbG9uZwAAAoMAAAAAUmdodGxvbmcAAAJYAAAAD3V4cFBhbmVsQXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAAVHRsIFRFWFQAAAAYAFcAZQBiACAAUwBlAHIAdgBpAGMAZQAgAEMAYQBsAGwAIABSAGUAYQBkAGUAcgAA" host-cached-sizes="true"/>
+			</tab-group>
+		</tab-pane>
+		<toolbar id="14" size-variant="vertical-narrow" is-closed="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAXAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHQAbwBvAGwAYgBhAHIAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAAA"/>
+	</dock>
+	<dock anchor="right" content="palette toolbar" is-closed="false">
+		<tab-pane mode="icon" preferred-iconic-length="39" layout-mode="auto-flow">
+			<tab-group active-palette="15" is-closed="true">
+				<palette id="15" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAA3AHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAGMAYwB4AC4AdABpAG0AZQBsAGkAbgBlAC8AYwBjAHgAVABpAG0AZQBsAGkAbgBlAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAABwgAAAABMZWZ0bG9uZwAAAPAAAAAAQnRvbWxvbmcAAAHCAAAAAFJnaHRsb25nAAAA8AAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAAB3JIZyxThlPyi7BfVQAA" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="16" is-closed="false">
+				<palette id="16" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAbAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGIAcgB1AHMAaABzAHQAeQBsAGUAcgAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAiMAAAAATGVmdGxvbmcAAAFVAAAAAEJ0b21sb25nAAACIwAAAABSZ2h0bG9uZwAAAVU=" host-cached-sizes="true"/>
+				<palette id="17" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAcAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGIAcgB1AHMAaABwAHIAZQBzAGUAdABzAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAABCgAAAABMZWZ0bG9uZwAAAZAAAAAAQnRvbWxvbmcAAALEAAAAAFJnaHRsb25nAAABkA==" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="18" is-closed="true">
+				<palette id="18" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAWAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHMAdAB5AGwAZQBzAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAA8AAAAABMZWZ0bG9uZwAAAOgAAAAAQnRvbWxvbmcAAADwAAAAAFJnaHRsb25nAAAA6A==" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="19" is-closed="true">
+				<palette id="19" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAcAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGMAdQBzAHQAbwBtAHMAaABhAHAAZQBzAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAA8AAAAABMZWZ0bG9uZwAAAOgAAAAAQnRvbWxvbmcAAADwAAAAAFJnaHRsb25nAAAA6A==" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="20" is-closed="true">
+				<palette id="20" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAbAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGMAbABvAG4AZQBzAG8AdQByAGMAZQAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAQoAAAAATGVmdGxvbmcAAAEEAAAAAEJ0b21sb25nAAABCgAAAABSZ2h0bG9uZwAAAQQ=" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="21" is-closed="false">
+				<palette id="21" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAfAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHQAZQB4AHQAZwBsAHkAcABoAHMAcABhAG4AZQBsAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAA4gAAAABMZWZ0bG9uZwAAATEAAAAAQnRvbWxvbmcAAADiAAAAAFJnaHRsb25nAAABMQ==" host-cached-sizes="true"/>
+				<palette id="22" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAdAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHQAZQB4AHQAYwBoAGEAcgBhAGMAdABlAHIAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAADoAAAAAExlZnRsb25nAAAA3AAAAABCdG9tbG9uZwAAAOgAAAAAUmdodGxvbmcAAADc" host-cached-sizes="true"/>
+				<palette id="23" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAdAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHQAZQB4AHQAcABhAHIAYQBnAHIAYQBwAGgAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAD9AAAAAExlZnRsb25nAAAA3AAAAABCdG9tbG9uZwAAAP0AAAAAUmdodGxvbmcAAADc" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="24" is-closed="true">
+				<palette id="24" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAdAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHQAZQB4AHQAcABhAHIAYQBzAHQAeQBsAGUAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAB8AAAAAExlZnRsb25nAAAA0gAAAABCdG9tbG9uZwAAAHwAAAAAUmdodGxvbmcAAADS" host-cached-sizes="true"/>
+				<palette id="25" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAdAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHQAZQB4AHQAYwBoAGEAcgBzAHQAeQBsAGUAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAB8AAAAAExlZnRsb25nAAAA0gAAAABCdG9tbG9uZwAAAHwAAAAAUmdodGxvbmcAAADS" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="27" is-closed="false">
+				<palette id="26" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAVAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGMAbwBtAHAAcwAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAHgAAAAATGVmdGxvbmcAAAEJAAAAAEJ0b21sb25nAAAAeAAAAABSZ2h0bG9uZwAAAQk=" host-cached-sizes="true"/>
+				<palette id="27" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAaAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGEAbgBuAG8AdABhAHQAaQBvAG4AAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAABuAAAAAExlZnRsb25nAAAA0gAAAABCdG9tbG9uZwAAAG4AAAAAUmdodGxvbmcAAADS" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="28" is-closed="true">
+				<palette id="28" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAbAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHQAbwBvAGwAcAByAGUAcwBlAHQAcwAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAHwAAAAATGVmdGxvbmcAAADSAAAAAEJ0b21sb25nAAAAfAAAAABSZ2h0bG9uZwAAANI=" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="29" is-closed="true">
+				<palette id="29" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAlAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHAAYQB0AGMAaABtAGEAdABjAGgAZgBpAGwAbABwAHIAZQB2AGkAZQB3AAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAuQAAAABMZWZ0bG9uZwAAAbMAAAAAQnRvbWxvbmcAAAC5AAAAAFJnaHRsb25nAAABsw==" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="30" is-closed="true">
+				<palette id="30" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAaAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHMAbQBhAHIAdABiAHIAdQBzAGgAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAQqAAAAAExlZnRsb25nAAABFgAAAABCdG9tbG9uZwAABCoAAAAAUmdodGxvbmcAAAEW" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="31" is-closed="true">
+				<palette id="31" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAaAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHAAYQB0AGMAaABtAGEAdABjAGgAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAANZAAAAAExlZnRsb25nAAAA+gAAAABCdG9tbG9uZwAAA1kAAAAAUmdodGxvbmcAAAD6" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="32" is-closed="true">
+				<palette id="32" is-closed="true" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAsAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAGMAYQBpAC4AdQB4AHAALwBwAGEAbgBlAGwAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAACAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAAAAAAAAExlZnRsb25nAAAAAAAAAABCdG9tbG9uZwAAAAAAAAAAUmdodGxvbmcAAAAAAAAAD3V4cFBhbmVsQXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAAVHRsIFRFWFQAAAAbAEMAbwBuAHQAZQBuAHQAIABDAHIAZQBkAGUAbgB0AGkAYQBsAHMAIAAoAEIAZQB0AGEAKQAA" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="33" is-closed="true">
+				<palette id="33" is-closed="true" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAABSAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAHAAaABvAHQAbwBzAGgAbwBwAC0AbQBhAHQAZQByAGkAYQBsAC0AZgBpAGwAdABlAHIAcwAvAHMAdQBiAHMAdABhAG4AYwBlAFAAcgBvAHAAZQByAHQAaQBlAHMAUABhAG4AZQBsAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAAAAAAABMZWZ0bG9uZwAAAAAAAAAAQnRvbWxvbmcAAAAAAAAAAFJnaHRsb25nAAAAAAAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAABVPCZXBcXmAnAAA=" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="34" is-closed="true">
+				<palette id="34" is-closed="true" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAABOAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAHAAaABvAHQAbwBzAGgAbwBwAC0AbQBhAHQAZQByAGkAYQBsAC0AZgBpAGwAdABlAHIAcwAvAHMAdQBiAHMAdABhAG4AYwBlAEYAaQBsAHQAZQByAFAAYQBuAGUAbAAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAIAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAAAAAAAATGVmdGxvbmcAAAAAAAAAAEJ0b21sb25nAAAAAAAAAABSZ2h0bG9uZwAAAAAAAAAPdXhwUGFuZWxBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAABUdGwgVEVYVAAAAAVTwmVwbuSVXAAA" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="35" is-closed="true">
+				<palette id="35" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAUAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAG8AYwBpAG8AAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAAAAAAAAExlZnRsb25nAAAAAAAAAABCdG9tbG9uZwAAAAAAAAAAUmdodGxvbmcAAAAA" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="36" is-closed="false">
+				<palette id="36" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAABDAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBiAGEAdABjAGgALQByAGUAcABsAGEAYwBlAC0AbABpAG4AawBlAGQAcwBtAGEAcgB0AG8AYgBqAGUAYwB0AHMALgBvAGwANAAxADYALwB2AGEAbgBpAGwAbABhAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAADIAAAAABMZWZ0bG9uZwAAAlgAAAAAQnRvbWxvbmcAAAMgAAAAAFJnaHRsb25nAAACWAAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAADgBTAHQAYQByAHQAZQByACAAUABhAG4AZQBsAAA=" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="37" is-closed="false">
+				<palette id="37" is-closed="true" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAApAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBzAGQALQBwAHAAcAAvAHMAZABwAHAAcAAtAGMAbwBuAG4AZQBjAHQAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAACAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAIcAAAAAExlZnRsb25nAAABLAAAAABCdG9tbG9uZwAAAhwAAAAAUmdodGxvbmcAAAGUAAAAD3V4cFBhbmVsQXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAAVHRsIFRFWFQAAAANAFMARAAtAFAAUABQACAAMQAuADkALgAzAAA=" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="38" is-closed="false">
+				<palette id="38" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAaAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHAAcgBvAHAAZQByAHQAaQBlAHMAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAFQAAAAAExlZnRsb25nAAABHAAAAABCdG9tbG9uZwAAAVAAAAAAUmdodGxvbmcAAAEc" host-cached-sizes="true"/>
+				<palette id="39" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAjAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBzAGQALQBwAHAAcAAyAC8AcwBkAC0AcABwAHAAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAACAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAIhAAAAAExlZnRsb25nAAACQQAAAABCdG9tbG9uZwAAAiEAAAAAUmdodGxvbmcAAAJBAAAAD3V4cFBhbmVsQXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAAVHRsIFRFWFQAAAASAFMARAAtAFAAUABQACAAMgAuADAALQBiAGUAdABhAC4ANQAA" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="40" is-closed="true">
+				<palette id="40" is-closed="true" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAABAAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAGMAYwBsAGkAYgByAGEAcgBpAGUAcwBwAGEAbgBlAGwALwBjAGMATABpAGIAcgBhAHIAaQBlAHMAUABhAG4AZQBsAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAAAAAAABMZWZ0bG9uZwAAAAAAAAAAQnRvbWxvbmcAAAAAAAAAAFJnaHRsb25nAAAAAAAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAAAl6TAAA=" host-cached-sizes="true"/>
+			</tab-group>
+		</tab-pane>
+		<tab-pane mode="expanded" preferred-iconic-length="75" layout-mode="auto-flow">
+			<tab-group active-palette="47" is-closed="false">
+				<palette id="41" is-closed="true" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAA7AHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AcwB3AGYALgBjAHMAeABzAC4AYwBvAG0ALgBhAGQAbwBiAGUALgBEAGUAcwBpAGcAbgBMAGkAYgByAGEAcgBpAGUAcwAuAGEAbgBnAHUAbABhAHIAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAACAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAEsAAAAAExlZnRsb25nAAABogAAAABCdG9tbG9uZwAAASwAAAAAUmdodGxvbmcAAAGiAAAAEWZsYXNoUGFuZWxBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAABAAAAABUdGwgVEVYVAAAAAJekwAAAAAAGmhvbm9ySW5pdGlhbEFQRVNpemVSZXF1ZXN0Ym9vbAAAAAATZmxhc2hQYW5lbFBhbmVsRGF0YVRFWFQAAAABAAAAAAAiZGVmYXVsdENvbmZpZ0ZvcldvcmtzcGFjZUlzUGVuZGluZ2Jvb2wB" host-cached-sizes="true"/>
+				<palette id="42" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAWAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGMAcgBlAGEAdABlAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAABLAAAAABMZWZ0bG9uZwAAAaIAAAAAQnRvbWxvbmcAAAEsAAAAAFJnaHRsb25nAAAA8gAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAAA4wDZXQAAA==" host-cached-sizes="true"/>
+				<palette id="43" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAWAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHAAaQBjAGsAZQByAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAABLAAAAABMZWZ0bG9uZwAAAaMAAAAAQnRvbWxvbmcAAACGAAAAAFJnaHRsb25nAAAA5w==" host-cached-sizes="true"/>
+				<palette id="44" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAYAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHMAdwBhAHQAYwBoAGUAcwAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAASwAAAAATGVmdGxvbmcAAAGjAAAAAEJ0b21sb25nAAAA8AAAAABSZ2h0bG9uZwAAAOg=" host-cached-sizes="true"/>
+				<palette id="45" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAYAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHAAYQB0AHQAZQByAG4AcwAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAASwAAAAATGVmdGxvbmcAAAFbAAAAAEJ0b21sb25nAAAA8AAAAABSZ2h0bG9uZwAAAOg=" host-cached-sizes="true"/>
+				<palette id="46" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAZAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGcAcgBhAGQAaQBlAG4AdABzAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAABNAAAAABMZWZ0bG9uZwAAAaIAAAAAQnRvbWxvbmcAAADwAAAAAFJnaHRsb25nAAAA6A==" host-cached-sizes="true"/>
+				<palette id="47" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAoAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBiAGEAdABjAGgAXwBzAGMAYQBsAGUALwB2AGEAbgBpAGwAbABhAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAABNAAAAABMZWZ0bG9uZwAAAaIAAAAAQnRvbWxvbmcAAAEsAAAAAFJnaHRsb25nAAABAAAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAAB2J5kc9W/lxCfyllPgAA" host-cached-sizes="true"/>
+			</tab-group>
+			<tab-group active-palette="48" is-closed="false">
+				<palette id="48" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAWAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGwAYQB5AGUAcgBzAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAACVQAAAABMZWZ0bG9uZwAAAaIAAAAAQnRvbWxvbmcAAADbAAAAAFJnaHRsb25nAAAA8w==" host-cached-sizes="true"/>
+				<palette id="49" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAYAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGMAaABhAG4AbgBlAGwAcwAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAlUAAAAATGVmdGxvbmcAAAGiAAAAAEJ0b21sb25nAAAAfAAAAABSZ2h0bG9uZwAAANI=" host-cached-sizes="true"/>
+				<palette id="50" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAVAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAHAAYQB0AGgAcwAAAAAAFW93bENvbnRlbnRWaWV3QXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAcb3dsUGFsZXR0ZVByZWZlcnJlZFNpemVBcnJheVZsTHMAAAABT2JqYwAAAAEAAAAAAABSY3QxAAAABAAAAABUb3AgbG9uZwAAAlUAAAAATGVmdGxvbmcAAAGiAAAAAEJ0b21sb25nAAAAfAAAAABSZ2h0bG9uZwAAANI=" host-cached-sizes="true"/>
+			</tab-group>
+		</tab-pane>
+	</dock>
+	<dock anchor="none" content="palette toolbar" origin="0 0" is-closed="true">
+		<tab-pane mode="expanded" preferred-iconic-length="0" layout-mode="manual">
+			<tab-group active-palette="51" is-closed="false">
+				<palette id="51" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAA0AHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAGMAYwB4AC4AcwBoAGEAcgBlAHMAaABlAGUAdAAvAGkAbgB2AGkAdABlAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAACHAAAAABMZWZ0bG9uZwAAAagAAAAAQnRvbWxvbmcAAAIcAAAAAFJnaHRsb25nAAABqAAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAADwBJAG4AdgBpAHQAZQAgAHQAbwAgAEUAZABpAHQAAA==" host-cached-sizes="true"/>
+			</tab-group>
+		</tab-pane>
+	</dock>
+	<dock anchor="none" content="palette toolbar" origin="0 0" is-closed="true">
+		<tab-pane mode="expanded" preferred-iconic-length="0" layout-mode="manual">
+			<tab-group active-palette="52" is-closed="false">
+				<palette id="52" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAA0AHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAGMAYwB4AC4AcwBoAGEAcgBlAHMAaABlAGUAdAAvAHIAZQB2AGkAZQB3AAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAACHAAAAABMZWZ0bG9uZwAAAagAAAAAQnRvbWxvbmcAAAIcAAAAAFJnaHRsb25nAAABqAAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAAEQBTAGgAYQByAGUAIABmAG8AcgAgAFIAZQB2AGkAZQB3AAA=" host-cached-sizes="true"/>
+			</tab-group>
+		</tab-pane>
+	</dock>
+	<dock anchor="none" content="palette toolbar" origin="0 0" is-closed="true">
+		<tab-pane mode="expanded" preferred-iconic-length="0" layout-mode="manual">
+			<tab-group active-palette="53" is-closed="false">
+				<palette id="53" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAABQAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAHAAaABvAHQAbwBzAGgAbwBwAC0AbQBhAHQAZQByAGkAYQBsAC0AZgBpAGwAdABlAHIAcwAvAHMAdQBiAHMAdABhAG4AYwBlAE0AYQB0AGUAcgBpAGEAbABQAGEAbgBlAGwAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAACAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAMgAAAAAExlZnRsb25nAAABLAAAAABCdG9tbG9uZwAAAyAAAAAAUmdodGxvbmcAAAEsAAAAD3V4cFBhbmVsQXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAAVHRsIFRFWFQAAAADZ1CNKAAA" host-cached-sizes="true"/>
+			</tab-group>
+		</tab-pane>
+	</dock>
+	<dock anchor="none" content="palette toolbar" origin="0 0" is-closed="true">
+		<tab-pane mode="icon" preferred-iconic-length="141" layout-mode="manual">
+			<tab-group active-palette="54" is-closed="false">
+				<palette id="54" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAArAHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBVAFgAUAAtAEUAWABUAC0ASABUAE0ATAAvAG0AYQBpAG4AUABhAG4AZQBsAAAAAAAVb3dsQ29udGVudFZpZXdBcHBEYXRhT2JqYwAAAAEAAAAAAABudWxsAAAAAgAAABxvd2xQYWxldHRlUHJlZmVycmVkU2l6ZUFycmF5VmxMcwAAAAFPYmpjAAAAAQAAAAAAAFJjdDEAAAAEAAAAAFRvcCBsb25nAAAAlgAAAABMZWZ0bG9uZwAAAJYAAAAAQnRvbWxvbmcAAACWAAAAAFJnaHRsb25nAAAAlgAAAA91eHBQYW5lbEFwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAAFR0bCBURVhUAAAAEgBVAFgAUAAtAGUAeAB0AGUAcgBuAGEAbAAgAGgAdABtAGwAAA==" host-cached-sizes="true"/>
+			</tab-group>
+		</tab-pane>
+	</dock>
+</workspace>
+	</photoshop-panel-configuration>
+	<photoshop-shortcut-customization>
+<photoshop-keyboard-shortcuts version="4" filename="我的工作区" modified="0" multi-undo="1">
+	<command kind="dynamic" name="Vanishing Point">
+		<shortcut>Alt+Ctrl+V</shortcut>
+	</command>
+	<command kind="dynamic" name="Liquify">
+		<shortcut>Shift+Ctrl+X</shortcut>
+	</command>
+	<command kind="dynamic" name="Lens Correction">
+		<shortcut>Shift+Ctrl+R</shortcut>
+	</command>
+	<command kind="dynamic" name="Camera Raw Filter">
+		<shortcut>Shift+Ctrl+A</shortcut>
+	</command>
+	<command kind="dynamic" name="Wide Angle Correction">
+		<shortcut>Alt+Shift+Ctrl+A</shortcut>
+	</command>
+	<command kind="static" id="10" name="新建(N)...">
+		<shortcut>Ctrl+N</shortcut>
+	</command>
+	<command kind="static" id="20" name="打开(O)...">
+		<shortcut>Ctrl+O</shortcut>
+	</command>
+	<command kind="static" id="21" name="打开为...">
+		<shortcut>Alt+Shift+Ctrl+O</shortcut>
+	</command>
+	<command kind="static" id="30" name="存储(S)">
+		<shortcut>Ctrl+S</shortcut>
+	</command>
+	<command kind="static" id="31" name="关闭(C)">
+		<shortcut>Ctrl+W</shortcut>
+	</command>
+	<command kind="static" id="32" name="存储为(A)...">
+		<shortcut>Shift+Ctrl+S</shortcut>
+	</command>
+	<command kind="static" id="33" name="存储副本...">
+		<shortcut>Alt+Ctrl+S</shortcut>
+	</command>
+	<command kind="static" id="34" name="恢复(V)">
+		<shortcut>F12</shortcut>
+	</command>
+	<command kind="static" id="36" name="退出(X)">
+		<shortcut>Ctrl+Q</shortcut>
+	</command>
+	<command kind="static" id="37" name="关闭全部">
+		<shortcut>Alt+Ctrl+W</shortcut>
+	</command>
+	<command kind="static" id="46" name="关闭其它">
+		<shortcut>Alt+Ctrl+P</shortcut>
+	</command>
+	<command kind="static" id="101" name="还原(O)">
+		<shortcut>Ctrl+Z</shortcut>
+	</command>
+	<command kind="static" id="103" name="剪切(T)">
+		<shortcut>Ctrl+X</shortcut>
+		<shortcut>F2</shortcut>
+	</command>
+	<command kind="static" id="104" name="拷贝(C)">
+		<shortcut>Ctrl+C</shortcut>
+		<shortcut>F3</shortcut>
+	</command>
+	<command kind="static" id="105" name="粘贴(P)">
+		<shortcut>Ctrl+V</shortcut>
+		<shortcut>F4</shortcut>
+	</command>
+	<command kind="static" id="132" name="重做(O)">
+		<shortcut>Shift+Ctrl+Z</shortcut>
+	</command>
+	<command kind="static" id="133" name="切换最终状态">
+		<shortcut>Alt+Ctrl+Z</shortcut>
+	</command>
+	<command kind="static" id="177" name="打印一份(Y)">
+		<shortcut>Alt+Shift+Ctrl+P</shortcut>
+	</command>
+	<command kind="static" id="1002" name="标尺(R)">
+		<shortcut>Ctrl+R</shortcut>
+	</command>
+	<command kind="static" id="1004" name="放大(I)">
+		<shortcut>Ctrl++</shortcut>
+		<shortcut>Ctrl+=</shortcut>
+	</command>
+	<command kind="static" id="1005" name="缩小(O)">
+		<shortcut>Ctrl+-</shortcut>
+	</command>
+	<command kind="static" id="1016" name="取消选择(D)">
+		<shortcut>Ctrl+D</shortcut>
+	</command>
+	<command kind="static" id="1017" name="全部(A)">
+		<shortcut>Ctrl+A</shortcut>
+	</command>
+	<command kind="static" id="1018" name="反选(I)">
+		<shortcut>Shift+Ctrl+I</shortcut>
+		<shortcut>Shift+F7</shortcut>
+	</command>
+	<command kind="static" id="1019" name="上次滤镜操作(F)">
+		<shortcut>Alt+Ctrl+F</shortcut>
+	</command>
+	<command kind="static" id="1025" name="画笔设置">
+		<shortcut>F5</shortcut>
+	</command>
+	<command kind="static" id="1030" name="图像大小(I)...">
+		<shortcut>Alt+Ctrl+I</shortcut>
+	</command>
+	<command kind="static" id="1031" name="画布大小(S)...">
+		<shortcut>Alt+Ctrl+C</shortcut>
+	</command>
+	<command kind="static" id="1036" name="羽化(F)...">
+		<shortcut>Shift+F6</shortcut>
+	</command>
+	<command kind="static" id="1040" name="贴入(I)">
+		<shortcut>Alt+Shift+Ctrl+V</shortcut>
+	</command>
+	<command kind="static" id="1042" name="填充(L)...">
+		<shortcut>Shift+F5</shortcut>
+	</command>
+	<command kind="static" id="1046" name="颜色">
+		<shortcut>F6</shortcut>
+	</command>
+	<command kind="static" id="1055" name="信息">
+		<shortcut>F8</shortcut>
+	</command>
+	<command kind="static" id="1098" name="图层">
+		<shortcut>F7</shortcut>
+	</command>
+	<command kind="static" id="1099" name="图层(L)...">
+		<shortcut>Shift+Ctrl+N</shortcut>
+	</command>
+	<command kind="static" id="1105" name="校样颜色(L)">
+		<shortcut>Ctrl+Y</shortcut>
+	</command>
+	<command kind="static" id="1106" name="色域警告(W)">
+		<shortcut>Shift+Ctrl+Y</shortcut>
+	</command>
+	<command kind="static" id="1107" name="合并拷贝(Y)">
+		<shortcut>Shift+Ctrl+C</shortcut>
+	</command>
+	<command kind="static" id="1114" name="隐藏图层(R)">
+		<shortcut>Ctrl+,</shortcut>
+	</command>
+	<command kind="static" id="1115" name="选择并遮住(K)...">
+		<shortcut>Alt+Ctrl+R</shortcut>
+	</command>
+	<command kind="static" id="1137" name="文件简介(F)...">
+		<shortcut>Alt+Shift+Ctrl+I</shortcut>
+	</command>
+	<command kind="static" id="1139" name="合并可见图层">
+		<shortcut>Shift+Ctrl+E</shortcut>
+	</command>
+	<command kind="static" id="1154" name="渐隐(D)...">
+		<shortcut>Shift+Ctrl+F</shortcut>
+	</command>
+	<command kind="static" id="1166" name="合并图层(E)">
+		<shortcut>Ctrl+E</shortcut>
+	</command>
+	<command kind="static" id="1170" name="动作">
+		<shortcut>Alt+F9</shortcut>
+		<shortcut>F9</shortcut>
+	</command>
+	<command kind="static" id="1190" name="100%">
+		<shortcut>Ctrl+1</shortcut>
+		<shortcut>Alt+Ctrl+0</shortcut>
+	</command>
+	<command kind="static" id="1192" name="按屏幕大小缩放(F)">
+		<shortcut>Ctrl+0</shortcut>
+	</command>
+	<command kind="static" id="1297" name="原位粘贴(P)">
+		<shortcut>Shift+Ctrl+V</shortcut>
+	</command>
+	<command kind="static" id="1520" name="在 Bridge 中浏览(B)...">
+		<shortcut>Alt+Ctrl+O</shortcut>
+		<shortcut>Shift+Ctrl+O</shortcut>
+	</command>
+	<command kind="static" id="1530" name="关闭并转到 Bridge...">
+		<shortcut>Shift+Ctrl+W</shortcut>
+	</command>
+	<command kind="static" id="1695" name="存储为 Web 所用格式（旧版）...">
+		<shortcut>Alt+Shift+Ctrl+S</shortcut>
+	</command>
+	<command kind="static" id="1701" name="反相(I)">
+		<shortcut>Ctrl+I</shortcut>
+	</command>
+	<command kind="static" id="1801" name="色阶(L)...">
+		<shortcut>Ctrl+L</shortcut>
+	</command>
+	<command kind="static" id="1802" name="曲线(U)...">
+		<shortcut>Ctrl+M</shortcut>
+	</command>
+	<command kind="static" id="1804" name="色彩平衡(B)...">
+		<shortcut>Ctrl+B</shortcut>
+	</command>
+	<command kind="static" id="1805" name="色相/饱和度(H)...">
+		<shortcut>Ctrl+U</shortcut>
+	</command>
+	<command kind="static" id="1808" name="自动色调(N)">
+		<shortcut>Shift+Ctrl+L</shortcut>
+	</command>
+	<command kind="static" id="1809" name="去色(D)">
+		<shortcut>Shift+Ctrl+U</shortcut>
+	</command>
+	<command kind="static" id="1810" name="自动对比度(U)">
+		<shortcut>Alt+Shift+Ctrl+L</shortcut>
+	</command>
+	<command kind="static" id="1817" name="自动颜色(O)">
+		<shortcut>Shift+Ctrl+B</shortcut>
+	</command>
+	<command kind="static" id="1824" name="黑白(K)...">
+		<shortcut>Alt+Shift+Ctrl+B</shortcut>
+	</command>
+	<command kind="static" id="1943" name="重新选择(E)">
+		<shortcut>Shift+Ctrl+D</shortcut>
+	</command>
+	<command kind="static" id="2101" name="打印(P)...">
+		<shortcut>Ctrl+P</shortcut>
+	</command>
+	<command kind="static" id="2207" name="自由变换(F)">
+		<shortcut>Ctrl+T</shortcut>
+	</command>
+	<command kind="static" id="2217" name="再次(A)">
+		<shortcut>Shift+Ctrl+T</shortcut>
+	</command>
+	<command kind="static" id="2220" name="内容识别缩放">
+		<shortcut>Alt+Shift+Ctrl+C</shortcut>
+	</command>
+	<command kind="static" id="2311" name="常规(G)...">
+		<shortcut>Ctrl+K</shortcut>
+	</command>
+	<command kind="static" id="2344" name="颜色设置(G)...">
+		<shortcut>Shift+Ctrl+K</shortcut>
+	</command>
+	<command kind="static" id="2711" name="置为顶层(F)">
+		<shortcut>Shift+Ctrl+]</shortcut>
+	</command>
+	<command kind="static" id="2712" name="前移一层(W)">
+		<shortcut>Ctrl+]</shortcut>
+	</command>
+	<command kind="static" id="2713" name="后移一层(K)">
+		<shortcut>Ctrl+[</shortcut>
+	</command>
+	<command kind="static" id="2714" name="置为底层(B)">
+		<shortcut>Shift+Ctrl+[</shortcut>
+	</command>
+	<command kind="static" id="2940" name="锁定参考线(G)">
+		<shortcut>Alt+Ctrl+;</shortcut>
+	</command>
+	<command kind="static" id="2957" name="锁定图层(L)...">
+		<shortcut>Ctrl+/</shortcut>
+	</command>
+	<command kind="static" id="2958" name="图层编组(G)">
+		<shortcut>Ctrl+G</shortcut>
+	</command>
+	<command kind="static" id="2959" name="取消图层编组(U)">
+		<shortcut>Shift+Ctrl+G</shortcut>
+	</command>
+	<command kind="static" id="2962" name="所有图层(L)">
+		<shortcut>Alt+Ctrl+A</shortcut>
+	</command>
+	<command kind="static" id="2970" name="通过拷贝的图层(C)">
+		<shortcut>Ctrl+J</shortcut>
+	</command>
+	<command kind="static" id="2971" name="通过剪切的图层(T)">
+		<shortcut>Shift+Ctrl+J</shortcut>
+	</command>
+	<command kind="static" id="2972" name="创建剪贴蒙版(C)">
+		<shortcut>Alt+Ctrl+G</shortcut>
+	</command>
+	<command kind="static" id="2982" name="查找图层">
+		<shortcut>Alt+Shift+Ctrl+F</shortcut>
+	</command>
+	<command kind="static" id="3443" name="导出为...">
+		<shortcut>Alt+Shift+Ctrl+W</shortcut>
+	</command>
+	<command kind="static" id="3446" name="快速导出为 PNG">
+		<shortcut>Shift+Ctrl+'</shortcut>
+	</command>
+	<command kind="static" id="3447" name="导出为...">
+		<shortcut>Alt+Shift+Ctrl+'</shortcut>
+	</command>
+	<command kind="static" id="3500" name="显示额外内容(X)">
+		<shortcut>Ctrl+H</shortcut>
+	</command>
+	<command kind="static" id="3502" name="目标路径(P)">
+		<shortcut>Shift+Ctrl+H</shortcut>
+	</command>
+	<command kind="static" id="3503" name="参考线(U)">
+		<shortcut>Ctrl+;</shortcut>
+	</command>
+	<command kind="static" id="3504" name="网格(G)">
+		<shortcut>Ctrl+'</shortcut>
+	</command>
+	<command kind="static" id="3520" name="对齐(N)">
+		<shortcut>Shift+Ctrl+;</shortcut>
+	</command>
+	<command kind="static" id="5957" name="搜索">
+		<shortcut>Ctrl+F</shortcut>
+	</command>
+	<command kind="static" id="5980" name="键盘快捷键...">
+		<shortcut>Alt+Shift+Ctrl+K</shortcut>
+	</command>
+	<command kind="static" id="5982" name="菜单(U)...">
+		<shortcut>Alt+Shift+Ctrl+M</shortcut>
+	</command>
+	<tool name="移动工具" type="1" key="1819113074">V</tool>
+	<tool name="画板工具" type="1" key="1098019924">V</tool>
+	<tool name="矩形选框工具" type="1" key="1919380852">M</tool>
+	<tool name="椭圆选框工具" type="1" key="1701604724">M</tool>
+	<tool name="单行选框工具" type="1" key="1936878964"></tool>
+	<tool name="单列选框工具" type="1" key="1935895924"></tool>
+	<tool name="选区画笔工具" type="1" key="1936482930">L</tool>
+	<tool name="套索工具" type="1" key="1818325871">L</tool>
+	<tool name="多边形套索工具" type="1" key="1885826926">L</tool>
+	<tool name="磁性套索工具" type="1" key="1835819379">L</tool>
+	<tool name="对象选择工具" type="1" key="1835494497">W</tool>
+	<tool name="快速选择工具" type="1" key="1902867308">W</tool>
+	<tool name="魔棒工具" type="1" key="2002873956">W</tool>
+	<tool name="裁剪工具" type="1" key="1668444016">C</tool>
+	<tool name="透视裁剪工具" type="1" key="1885565552">C</tool>
+	<tool name="切片工具" type="1" key="1399612244">C</tool>
+	<tool name="切片选择工具" type="1" key="1399608148">C</tool>
+	<tool name="图框工具" type="1" key="1181773652">K</tool>
+	<tool name="吸管工具" type="1" key="1702454628">I</tool>
+	<tool name="颜色取样器工具" type="1" key="1668246643">I</tool>
+	<tool name="标尺工具" type="1" key="1835360596">I</tool>
+	<tool name="注释工具" type="1" key="1417180225">I</tool>
+	<tool name="计数工具" type="1" key="1668248942">I</tool>
+	<tool name="污点修复画笔工具" type="1" key="1936746562">J</tool>
+	<tool name="移除工具" type="1" key="1667327604">J</tool>
+	<tool name="修复画笔工具" type="1" key="1937010029">J</tool>
+	<tool name="修补工具" type="1" key="1886675816">J</tool>
+	<tool name="内容感知移动工具" type="1" key="1919118704">J</tool>
+	<tool name="红眼工具" type="1" key="1919182201">J</tool>
+	<tool name="颜色替换工具" type="1" key="1668440692">B</tool>
+	<tool name="画笔工具" type="1" key="1886286946">B</tool>
+	<tool name="铅笔工具" type="1" key="1885695587">B</tool>
+	<tool name="混合器画笔工具" type="1" key="2003137634">B</tool>
+	<tool name="仿制图章工具" type="1" key="1937006957">S</tool>
+	<tool name="图案图章工具" type="1" key="1937010032">S</tool>
+	<tool name="历史记录画笔工具" type="1" key="1752396866">Y</tool>
+	<tool name="历史记录艺术画笔工具" type="1" key="1634230900">Y</tool>
+	<tool name="橡皮擦工具" type="1" key="1701994867">E</tool>
+	<tool name="背景橡皮擦工具" type="1" key="1936028257">E</tool>
+	<tool name="魔术橡皮擦工具" type="1" key="1835364961">E</tool>
+	<tool name="渐变工具" type="1" key="1651401812">G</tool>
+	<tool name="油漆桶工具" type="1" key="1651860331">G</tool>
+	<tool name="模糊工具" type="1" key="1651275122"></tool>
+	<tool name="锐化工具" type="1" key="1936220530"></tool>
+	<tool name="涂抹工具" type="1" key="1936553316"></tool>
+	<tool name="调整画笔工具" type="1" key="1633970786"></tool>
+	<tool name="减淡工具" type="1" key="1685021799">O</tool>
+	<tool name="加深工具" type="1" key="1651864174">O</tool>
+	<tool name="海绵工具" type="1" key="1685283188">O</tool>
+	<tool name="钢笔工具" type="1" key="1885695572">P</tool>
+	<tool name="自由钢笔工具" type="1" key="1836082542">P</tool>
+	<tool name="内容感知描摹工具" type="1" key="1667322994">P</tool>
+	<tool name="弯度钢笔工具" type="1" key="1668310382">P</tool>
+	<tool name="添加锚点工具" type="1" key="1634430580"></tool>
+	<tool name="删除锚点工具" type="1" key="1684762228"></tool>
+	<tool name="转换点工具" type="1" key="1667985012"></tool>
+	<tool name="横排文字工具" type="1" key="1954038392">T</tool>
+	<tool name="直排文字工具" type="1" key="1954038358">T</tool>
+	<tool name="直排文字蒙版工具" type="1" key="1987344723">T</tool>
+	<tool name="横排文字蒙版工具" type="1" key="1954115667">T</tool>
+	<tool name="路径选择工具" type="1" key="1885565780">A</tool>
+	<tool name="直接选择工具" type="1" key="1886677089">A</tool>
+	<tool name="矩形工具" type="1" key="1382376308">U</tool>
+	<tool name="椭圆工具" type="1" key="1164734579">U</tool>
+	<tool name="三角形工具" type="1" key="1416778600">U</tool>
+	<tool name="多边形工具" type="1" key="1349479545">U</tool>
+	<tool name="直线工具" type="1" key="1818848852">U</tool>
+	<tool name="自定形状工具" type="1" key="1131762536">U</tool>
+	<tool name="抓手工具" type="1" key="1751215716">H</tool>
+	<tool name="旋转视图工具" type="1" key="1919906932">R</tool>
+	<tool name="缩放工具" type="1" key="2054123373">Z</tool>
+	<tool name="目标调整工具" type="1" key="1952932196"></tool>
+	<tool name="默认前景色/背景色" type="2">D</tool>
+	<tool name="前景色/背景色互换" type="3">X</tool>
+	<tool name="切换标准/快速蒙版模式" type="4">Q</tool>
+	<tool name="切换屏幕模式" type="5">F</tool>
+	<tool name="切换保留透明区域" type="6">/</tool>
+	<tool name="减小画笔大小" type="7">[</tool>
+	<tool name="增加画笔大小" type="8">]</tool>
+	<tool name="减小画笔硬度" type="9">{</tool>
+	<tool name="增加画笔硬度" type="10">}</tool>
+	<tool name="渐细画笔" type="11">,</tool>
+	<tool name="渐粗画笔" type="12">.</tool>
+	<tool name="最细画笔" type="13">&lt;</tool>
+	<tool name="最粗画笔" type="14">&gt;</tool>
+	<tool name="前景色拾色器" type="15"></tool>
+	<tool name="背景色拾色器" type="16"></tool>
+	<tool name="载入混合器画笔" type="17"></tool>
+	<tool name="清理混合器画笔" type="18"></tool>
+	<tool name="切换混合器画笔自动载入" type="19"></tool>
+	<tool name="切换混合器画笔自动清理" type="20"></tool>
+	<tool name="切换混合器画笔对所有图层取样" type="21"></tool>
+	<tool name="锐化侵蚀笔尖" type="22"></tool>
+	<tool name="直接选择模式切换" type="23"></tool>
+	<tool name="切换画笔喷枪模式" type="24"></tool>
+	<tool name="切换画笔压力控件大小" type="25"></tool>
+	<tool name="切换画笔压力控件不透明度" type="26"></tool>
+	<tool name="将对称切换为关/上次" type="27"></tool>
+	<tool name="切换对称可见性" type="28"></tool>
+	<tool name="切换预览模式" type="29">N</tool>
+	<tool name="画笔切换擦除" type="30"></tool>
+	<tool name="显示上一个图层边界" type="31">]</tool>
+	<tool name="显示下一个图层边界" type="32">[</tool>
+	<taskspace name="Select and Mask">
+		<taskspace-tool name="Quick Selection Tool" type="1" key="1902867308">W</taskspace-tool>
+		<taskspace-tool name="Refine Edge Brush Tool" type="1" key="1397518949">R</taskspace-tool>
+		<taskspace-tool name="Brush Tool" type="1" key="1886286946">B</taskspace-tool>
+		<taskspace-tool name="Object Selection Tool" type="1" key="1835494497">W</taskspace-tool>
+		<taskspace-tool name="Lasso Tool" type="1" key="1818325871">L</taskspace-tool>
+		<taskspace-tool name="Polygonal Lasso Tool" type="1" key="1885826926">L</taskspace-tool>
+		<taskspace-tool name="Hand Tool" type="1" key="1751215716">H</taskspace-tool>
+		<taskspace-tool name="Zoom Tool" type="1" key="2054123373">Z</taskspace-tool>
+		<taskspace-property name="Cycle Tool Mode" type="1">E</taskspace-property>
+		<taskspace-property name="Show Edge" type="1">J</taskspace-property>
+		<taskspace-property name="Show Original" type="1">P</taskspace-property>
+		<taskspace-property name="High Quality Preview" type="1"></taskspace-property>
+		<taskspace-property name="Cycle View Mode" type="1">F</taskspace-property>
+		<taskspace-property name="Disable Views" type="1">X</taskspace-property>
+		<taskspace-property name="Marching Ants" type="1">M</taskspace-property>
+		<taskspace-property name="Overlay" type="1">V</taskspace-property>
+		<taskspace-property name="On Black" type="1">A</taskspace-property>
+		<taskspace-property name="On White" type="1">T</taskspace-property>
+		<taskspace-property name="Black &amp; White" type="1">K</taskspace-property>
+		<taskspace-property name="On Layers" type="1">Y</taskspace-property>
+		<taskspace-property name="Onion Skin" type="1">O</taskspace-property>
+		<taskspace-property name="Smart Radius" type="1"></taskspace-property>
+		<taskspace-property name="Decontaminate Colors" type="1"></taskspace-property>
+	</taskspace>
+	<taskspace name="Content-Aware Fill">
+		<taskspace-tool name="Sampling Brush Tool" type="1" key="1886217314">B</taskspace-tool>
+		<taskspace-tool name="Lasso Tool" type="1" key="1818325871">L</taskspace-tool>
+		<taskspace-tool name="Polygonal Lasso Tool" type="1" key="1885826926">L</taskspace-tool>
+		<taskspace-tool name="Alignment Tool" type="1" key="1886216556">A</taskspace-tool>
+		<taskspace-tool name="Hand Tool" type="1" key="1751215716">H</taskspace-tool>
+		<taskspace-tool name="Zoom Tool" type="1" key="2054123373">Z</taskspace-tool>
+		<taskspace-property name="Cycle Tool Mode" type="1">E</taskspace-property>
+		<taskspace-property name="Show Sampling Area" type="1"></taskspace-property>
+		<taskspace-property name="Sample All Layers" type="1"></taskspace-property>
+		<taskspace-property name="Scale" type="1"></taskspace-property>
+		<taskspace-property name="Mirror" type="1"></taskspace-property>
+	</taskspace>
+	<taskspace name="Neural Filters">
+		<taskspace-tool name="Hand Tool" type="1" key="1751215716">H</taskspace-tool>
+		<taskspace-tool name="Zoom Tool" type="1" key="2054123373">Z</taskspace-tool>
+		<taskspace-tool name="Sampling Brush Tool" type="1" key="1852269172">S</taskspace-tool>
+		<taskspace-tool name="Selection Brush Tool" type="1" key="1852273506">B</taskspace-tool>
+		<taskspace-tool name="Selection Removal Brush Tool" type="1" key="1852273522">E</taskspace-tool>
+	</taskspace>
+</photoshop-keyboard-shortcuts>
+	</photoshop-shortcut-customization>
+	<photoshop-menu-customization>
+<photoshop-menu-settings version="2" filename="我的工作区" modified="0">
+</photoshop-menu-settings>
+	</photoshop-menu-customization>
+	<photoshop-toolbar-customization>AAAAEAAAAAEAAAAAAABudWxsAAAACgAAAAB0dmVybG9uZwAAAAEAAAAAdHBhZGxvbmcAAAAAAAAAAGZnYmdib29sAQAAAABxa21tYm9vbAEAAAAAc2NtZGJvb2wBAAAAAHNob3Zib29sAQAAAABuYW5hYm9vbAAAAAAAZGRrYmJvb2wAAAAAAHRsc3RWbExzAAAAGFZsTHMAAAACT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2Fyd1RPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nQXJ0VFZsTHMAAAAET2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3JnbXRPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nZWxtdE9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdzcm10T2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3NjbXRWbExzAAAABE9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdzbGJyT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2xhc29PYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25ncGdvbk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdtbGFzVmxMcwAAAAFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nbWdsYVZsTHMAAAACT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3Frc2xPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nd2FuZFZsTHMAAAAET2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2Nyb3BPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25ncGNycE9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdTbGNUT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ1NsU1RWbExzAAAAAU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdGcG9UVmxMcwAAAAVPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nZXllZE9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdjb2xzT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ21lYVRPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nVHh0QU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdjb3VuVmxMcwAAAAZPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nc3BoQk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdjYWZ0T2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3N0bW1PYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25ncHRjaE9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdyY21wT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3JkZXlWbExzAAAAAU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdjcmJ0VmxMcwAAAANPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25ncG50Yk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdwZW5jT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3dldGJWbExzAAAAAk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdzdGFtT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3N0bXBWbExzAAAAAk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdoc3RCT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2FoYnRWbExzAAAAA09iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdlcmFzT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3NlcmFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nbWVyYVZsTHMAAAACT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2JuZFRPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nYnVja1ZsTHMAAAADT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2JsdXJPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nc2hhck9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdzbXVkVmxMcwAAAAFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nYWRqYlZsTHMAAAADT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2RvZGdPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nYnVybk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdkc2F0VmxMcwAAAAdPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25ncGVuVE9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdtcGVuT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2NhVHJPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nY3Blbk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdha250T2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2RrbnRPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nY2tudFZsTHMAAAAET2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3R4QnhPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25ndHhCVk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmd2dHlTT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3R5cFNWbExzAAAAAk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdwY3NUT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3B0aGFWbExzAAAABk9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdSZWN0T2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ0VscHNPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nVHJTaE9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAHdG9vbEtleWxvbmdQb2x5T2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2xpblRPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25nQ3VTaFZsTHMAAAACT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ2hhbmRPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAB3Rvb2xLZXlsb25ncm90dFZsTHMAAAABT2JqYwAAAAEAAAAAAABudWxsAAAAAQAAAAd0b29sS2V5bG9uZ3pvb20AAAAAb2ZsdFZsTHMAAAAA</photoshop-toolbar-customization>
+</photoshop-workspace>
