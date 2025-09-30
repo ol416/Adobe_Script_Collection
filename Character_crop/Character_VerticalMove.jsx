@@ -4,6 +4,11 @@
 // 再将图层顶端对齐到画布顶部，允许一定程度的顶部偏移
 // =======================================================
 
+<javascriptresource>
+<name>2.垂直对齐</name>
+<category>Character_crop</category>
+</javascriptresource>
+
 (function () {
     if (!app.documents.length) {
         alert("请先打开一个文档并选择图层");

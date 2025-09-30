@@ -3,6 +3,11 @@
 // 前提：图层已被选中，选区可由动作生成（如 test/上半身 或 人物主体）
 // =======================================================
 
+<javascriptresource>
+<name>3.水平居中对齐</name>
+<category>Character_crop</category>
+</javascriptresource>
+
 (function () {
     if (!app.documents.length) {
         alert("请先打开一个文档并选择图层");

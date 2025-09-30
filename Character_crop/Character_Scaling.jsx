@@ -1,6 +1,11 @@
 #target photoshop
 app.bringToFront();
 
+<javascriptresource>
+<name>1.缩放</name>
+<category>Character_crop</category>
+</javascriptresource>
+
 function main() {
     if (!app.documents.length) {
         alert("请打开一个文档并选择图层");
@@ -14,7 +19,7 @@ function main() {
     var topOffset = 50; // 从画布顶部偏移50像素，可修改此值
 
     // 配置缩放偏移量（像素），可以根据需要调整
-    var scaleOffset = 5; // 在缩放计算中增加100像素偏移，可修改此值
+    var scaleOffset = 8; // 在缩放计算中增加100像素偏移，可修改此值
 
     // 1. 播放动作（生成上半身选区）
     app.doAction("选中上半身", "test");  // 动作名: 选中上半身，组名: test
