@@ -1,3 +1,4 @@
+#target photoshop
 // =======================================================
 // Photoshop ExtendScript: 顶对齐脚本（带顶部偏移）
 // 使用 Action "test/帽子或者头发" 生成选区，
@@ -9,7 +10,11 @@
 <category>Character_crop</category>
 </javascriptresource>
 
-(function () {
+// Photoshop ExtendScript: 顶对齐脚本（带顶部偏移）
+// 使用 Action "test/帽子或者头发" 生成选区，
+// 再将图层顶端对齐到画布顶部，允许一定程度的顶部偏移
+
+function characterVerticalMove() {
     if (!app.documents.length) {
         alert("请先打开一个文档并选择图层");
         return;
@@ -47,5 +52,7 @@
 
     // 取消选区
     doc.selection.deselect();
+}
 
-})();
+// 执行函数
+characterVerticalMove();
