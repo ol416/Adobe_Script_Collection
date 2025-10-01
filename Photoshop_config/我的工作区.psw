@@ -15,7 +15,7 @@
 	</dock>
 	<dock anchor="left" content="palette toolbar" is-closed="false">
 		<tab-pane mode="expanded" preferred-iconic-length="39" layout-mode="auto-flow">
-			<tab-group active-palette="6" is-closed="false">
+			<tab-group active-palette="4" is-closed="false">
 				<palette id="4" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAXAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGgAaQBzAHQAbwByAHkAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAGhAAAAAExlZnRsb25nAAABBAAAAABCdG9tbG9uZwAAAHwAAAAAUmdodGxvbmcAAAD6" host-cached-sizes="true"/>
 				<palette id="5" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAAXAHAAYQBuAGUAbABpAGQALgBzAHQAYQB0AGkAYwAuAGEAYwB0AGkAbwBuAHMAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAABAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAGhAAAAAExlZnRsb25nAAABBAAAAABCdG9tbG9uZwAAAYoAAAAAUmdodGxvbmcAAAD6" host-cached-sizes="true"/>
 				<palette id="6" is-closed="false" preferred-unconstrained-size="100 100" preferred-constrained-size="100 100" current-state="1" is-minimized="false" app-data="AAAAEAAAAAEAAAAAAABudWxsAAAAAgAAABdvd2xDb250ZW50Vmlld1N0cmluZ2lJRFRFWFQAAAA4AHAAYQBuAGUAbABpAGQALgBkAHkAbgBhAG0AaQBjAC4AdQB4AHAALwBjAG8AbQAuAGEAZABvAGIAZQAuAHAAbAB1AGcAaQBuAHMAcABhAG4AZQBsAC8AcABsAHUAZwBpAG4AcwBQAGEAbgBlAGwAAAAAABVvd2xDb250ZW50Vmlld0FwcERhdGFPYmpjAAAAAQAAAAAAAG51bGwAAAACAAAAHG93bFBhbGV0dGVQcmVmZXJyZWRTaXplQXJyYXlWbExzAAAAAU9iamMAAAABAAAAAAAAUmN0MQAAAAQAAAAAVG9wIGxvbmcAAAGhAAAAAExlZnRsb25nAAABBAAAAABCdG9tbG9uZwAAAfwAAAAAUmdodGxvbmcAAADwAAAAD3V4cFBhbmVsQXBwRGF0YU9iamMAAAABAAAAAAAAbnVsbAAAAAEAAAAAVHRsIFRFWFQAAAADY9JO9gAA" host-cached-sizes="true"/>
@@ -157,13 +157,7 @@
 	</photoshop-panel-configuration>
 	<photoshop-shortcut-customization>
 <photoshop-keyboard-shortcuts version="4" filename="我的工作区" modified="1" multi-undo="1">
-	<command kind="dynamic" name="Script_3.水平居中对齐">
-		<shortcut>Shift+F11</shortcut>
-	</command>
-	<command kind="dynamic" name="Script_2.垂直对齐">
-		<shortcut>Ctrl+F11</shortcut>
-	</command>
-	<command kind="dynamic" name="Script_1.缩放">
+	<command kind="dynamic" name="Script_0.缩放+垂直对齐+水平居中">
 		<shortcut>F11</shortcut>
 	</command>
 	<command kind="dynamic" name="Vanishing Point">

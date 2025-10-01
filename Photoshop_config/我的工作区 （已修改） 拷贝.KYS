@@ -1,12 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <photoshop-keyboard-shortcuts version="4" filename="我的工作区 （已修改） 拷贝" modified="1" multi-undo="1">
-	<command kind="dynamic" name="Script_3.水平居中对齐">
-		<shortcut>Shift+F11</shortcut>
-	</command>
-	<command kind="dynamic" name="Script_2.垂直对齐">
-		<shortcut>Ctrl+F11</shortcut>
-	</command>
-	<command kind="dynamic" name="Script_1.缩放">
+	<command kind="dynamic" name="Script_0.缩放+垂直对齐+水平居中">
 		<shortcut>F11</shortcut>
 	</command>
 	<command kind="dynamic" name="Vanishing Point">

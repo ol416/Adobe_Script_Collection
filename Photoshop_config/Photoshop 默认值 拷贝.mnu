@@ -1,3 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<photoshop-menu-settings version="2" filename="Photoshop 默认值 拷贝" modified="0">
+<photoshop-menu-settings version="2" filename="Photoshop 默认值 拷贝" modified="1">
+	<command kind="dynamic" name="Script_0.缩放+垂直对齐+水平居中" parentMenuID="109" menuType="0" hidden="0" color="6" />
+	<command kind="dynamic" name="Script_1.缩放" parentMenuID="109" menuType="0" hidden="0" color="6" />
+	<command kind="dynamic" name="Script_2.垂直对齐" parentMenuID="109" menuType="0" hidden="0" color="6" />
+	<command kind="dynamic" name="Script_3.水平居中对齐" parentMenuID="109" menuType="0" hidden="0" color="6" />
 </photoshop-menu-settings>
