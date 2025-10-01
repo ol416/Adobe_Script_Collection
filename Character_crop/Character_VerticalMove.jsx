@@ -26,22 +26,28 @@ function characterVerticalMove() {
     // 配置顶部偏移量（像素），可以根据需要调整
     var topOffset = 5; // 从画布顶部偏移50像素，可修改此值
 
-    // Step 1: 播放动作 "test/帽子或者头发"
+    // Step 1: 先检查是否有选区
     try {
-        app.doAction("帽子或者头发", "test"); // 动作名称, 动作组
+        var bounds = doc.selection.bounds; // [left, top, right, bottom]
     } catch (e) {
-        alert("未找到动作 test/帽子或者头发，请检查动作是否存在");
-        return;
+        // 没有选区，播放动作生成选区
+        try {
+            app.doAction("帽子或者头发", "test"); // 动作名称, 动作组
+        } catch (e) {
+            alert("未找到动作 test/帽子或者头发，请检查动作是否存在");
+            return;
+        }
+
+        // 再次检查是否有选区
+        try {
+            var bounds = doc.selection.bounds;
+        } catch (e) {
+            alert("未生成有效选区");
+            return;
+        }
     }
 
-    // Step 2: 获取选区边界
-    if (!doc.selection) {
-        alert("未生成有效选区");
-        return;
-    }
-
-    var bounds = doc.selection.bounds;
-    // bounds = [left, top, right, bottom]
+    // Step 2: 获取选区边界（如果已有选区则直接使用）
     var yMin = bounds[1].as("px");
 
     // Step 3: 计算需要移动的距离（考虑顶部偏移）

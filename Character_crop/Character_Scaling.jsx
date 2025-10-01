@@ -21,12 +21,18 @@ function main() {
     // 配置缩放偏移量（像素），可以根据需要调整
     var scaleOffset = 8; // 在缩放计算中增加100像素偏移，可修改此值
 
-    // 1. 播放动作（生成上半身选区）
-    app.doAction("选中上半身", "test");  // 动作名: 选中上半身，组名: test
-
-    // 2. 获取选区矩形
+    // 1. 先检查是否有选区，没有则播放动作生成选区
     var bounds = getSelectionBounds();
-    if (!bounds) return;
+    if (!bounds) {
+        // 没有选区，播放动作生成选区
+        app.doAction("选中上半身", "test");  // 动作名: 选中上半身，组名: test
+
+        // 再次获取选区矩形
+        bounds = getSelectionBounds();
+        if (!bounds) return;
+    }
+
+    // 2. 获取选区矩形（如果已有选区则直接使用）
 
     // 3. 缩放图层（带缩放偏移）
     scaleLayerToFitBounds(layer, bounds, scaleOffset);

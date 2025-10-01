@@ -21,20 +21,25 @@ function characterHorizontalAlign() {
     var doc = app.activeDocument;
     var layer = doc.activeLayer;
 
-    // Step 1: 播放动作 "test/选中上半身"
-    try {
-        app.doAction("选中上半身", "test"); // 动作名称, 动作组
-    } catch (e) {
-        alert("未找到动作 test/选中上半身，请检查动作是否存在");
-        return;
-    }
-
-    // 检查是否有选区
+    // Step 1: 先检查是否有选区
     try {
         var bounds = doc.selection.bounds; // [left, top, right, bottom]
     } catch (e) {
-        alert("没有有效的选区，请先运行动作生成选区");
-        return;
+        // 没有选区，播放动作生成选区
+        try {
+            app.doAction("选中上半身", "test"); // 动作名称, 动作组
+        } catch (e) {
+            alert("未找到动作 test/选中上半身，请检查动作是否存在");
+            return;
+        }
+
+        // 再次检查是否有选区
+        try {
+            var bounds = doc.selection.bounds;
+        } catch (e) {
+            alert("没有有效的选区，请先运行动作生成选区");
+            return;
+        }
     }
 
     // Step 2: 选区水平中心
