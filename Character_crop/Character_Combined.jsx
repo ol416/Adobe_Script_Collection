@@ -6,7 +6,7 @@ app.bringToFront();
 // =======================================================
 
 <javascriptresource>
-<name>Character Combined</name>
+<name>0.缩放+垂直对齐+水平居中</name>
 <category>Character_crop</category>
 </javascriptresource>
 
