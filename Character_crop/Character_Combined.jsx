@@ -2,8 +2,7 @@
 app.bringToFront();
 
 // =======================================================
-// Photoshop ExtendScript: 合并脚本 - 缩放+垂直对齐+水平居中
-// 整合了原有的三个脚本功能，避免多次运行action
+// Photoshop ExtendScript: 合并脚本 - 缩放+垂直对齐+水平居中（带多偏移量）
 // =======================================================
 
 <javascriptresource>
@@ -20,22 +19,27 @@ function characterCombined() {
     var doc = app.activeDocument;
     var layer = doc.activeLayer;
 
-    // 配置参数
-    var topOffset = 50;      // 顶部偏移量（像素）
-    var scaleOffset = 8;     // 缩放偏移量（像素）
-    var verticalTopOffset = 5; // 垂直对齐的顶部偏移量（像素）
+    // === 配置参数 ===
+    var CONFIG = {
+        topOffset: 50,          // 顶部安全边距
+        bottomOffset: 0,       // 底部安全边距
+        leftOffset: 0,          // 左边距修正
+        rightOffset: 0,         // 右边距修正
+        centerOffsetX: 0,       // 居中水平修正
+        centerOffsetY: 0,       // 居中垂直修正
+        scaleOffset: 8,         // 缩放高度偏移
+        verticalTopOffset: 5    // 垂直对齐时的额外顶部偏移
+    };
 
-    // 第一步：获取或生成选区（只需一次action）
+    // === 第一步：获取或生成选区 ===
     var bounds = getSelectionBounds();
     if (!bounds) {
-        // 没有选区，播放动作生成选区（只需一次）
         try {
             app.doAction("选中上半身", "test");
         } catch (e) {
             alert("未找到动作 test/选中上半身，请检查动作是否存在");
             return;
         }
-
         bounds = getSelectionBounds();
         if (!bounds) {
             alert("没有有效的选区，请先运行动作生成选区");
@@ -43,35 +47,48 @@ function characterCombined() {
         }
     }
 
-    // 第三步：缩放后获取新的选区Bounds（选区已同步缩放）
-    var scaledBounds = scaleLayerToFitBounds(layer, bounds, scaleOffset);
+    // === 第二步：缩放图层并计算新选区 ===
+    var scaledBounds = scaleLayerToFitBounds(layer, bounds, CONFIG.scaleOffset);
     if (!scaledBounds) {
         alert("缩放后未能获取选区，请检查选区是否仍然存在");
         return;
     }
 
-    // 第四步：计算最终的移动量（垂直和水平同时移动）
+    // === 第三步：计算移动量 ===
     var moveX = 0;
     var moveY = 0;
 
-    // 计算水平移动量（使用缩放后的选区）
-    var xLeft = scaledBounds.left;
-    var xRight = scaledBounds.right;
-    var xCenter = (xLeft + xRight) / 2;
-    var docCenter = doc.width.as("px") / 2;
-    moveX = docCenter - xCenter;
+    // --- 水平方向 ---
+    var xCenter = (scaledBounds.left + scaledBounds.right) / 2;
+    var docCenterX = doc.width.as("px") / 2;
+    moveX = (docCenterX - xCenter) + CONFIG.centerOffsetX;
 
-    // 计算垂直移动量（使用缩放后的选区进行垂直对齐）
+    // 左右边距修正
+    if (CONFIG.leftOffset !== 0) moveX += CONFIG.leftOffset;
+    if (CONFIG.rightOffset !== 0) moveX -= CONFIG.rightOffset;
+
+    // --- 垂直方向 ---
     var yMin = scaledBounds.top;
-    moveY = -yMin + verticalTopOffset;
+    var yMax = scaledBounds.bottom;
+    var docH = doc.height.as("px");
 
-    // 第六步：一次性移动图层（同时完成垂直和水平对齐）
+    // 以顶部为基准对齐
+    moveY = -yMin + CONFIG.verticalTopOffset + CONFIG.centerOffsetY;
+
+    // 顶部边距修正
+    if (CONFIG.topOffset > 0) moveY += CONFIG.topOffset;
+
+    // 底部边距修正（保证留白）
+    if (yMax + moveY + CONFIG.bottomOffset > docH) {
+        var overflow = (yMax + moveY + CONFIG.bottomOffset) - docH;
+        moveY -= overflow;
+    }
+
+    // === 第四步：一次性移动图层 ===
     layer.translate(moveX, moveY);
 
     // 取消选区
     doc.selection.deselect();
-
-    // alert("合并操作完成 ✅");
 }
 
 function getSelectionBounds() {
@@ -95,7 +112,7 @@ function scaleLayerToFitBounds(layer, bounds, scaleOffset) {
     var docH = doc.height.as("px");
     var selHeight = bounds.height;
 
-    // 在缩放计算中增加固定的像素偏移量
+    // 缩放计算：加入额外偏移量
     var adjustedHeight = selHeight + scaleOffset;
     var scale = (docH / adjustedHeight) * 100;
 
@@ -115,7 +132,6 @@ function scaleLayerToFitBounds(layer, bounds, scaleOffset) {
 
     return newBounds;
 }
-
 
 // 执行函数
 characterCombined();
